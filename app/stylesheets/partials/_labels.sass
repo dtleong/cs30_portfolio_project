@@ -1,7 +1,7 @@
 // ----------------------
 // Fading Labels on Forms
 // ----------------------
-!span_border_color = transparent
+!span_border_color = "transparent"
 
 !form_text_color = #fff
 !form_field_background = #333
@@ -14,7 +14,7 @@
     span.wrap
         :position relative
         :background = !span_border_color
-        :border = 5px solid !span_border_color
+        :border = 5px "solid" !span_border_color
         :display block
         :margin 5px 0 5px 0
         +border-radius(3px)
@@ -34,7 +34,7 @@
         input, textarea
             :padding 7px
             :color = !form_text_color
-            :border = 1px solid !form_field_border_color
+            :border = 1px "solid" !form_field_border_color
             :font-size 16px
             :font-weight bold
             :background = !form_field_background

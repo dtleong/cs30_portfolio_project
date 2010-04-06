@@ -2,8 +2,21 @@
 %html
   %head
     = stylesheet_link_tag 'compiled/global.css'
-
+  %link{:rel=> "shortcut icon", :href=> "/razer.ico"}
   %body
+    #nav
+      %ul
+        %li
+          = link_to "<span>Home</span>", "/home", :class => "medium red button"
+        %li
+          = link_to "<span>Resume</span>", "/resume", :class => "medium red button"
+        %li
+          = link_to "<span>Portfolio</span>", "/portfolio", :class => "medium red button"
+        %li
+          = link_to "<span>About</span>", "/about", :class => "medium red button"
+        %li
+          = link_to "<span>Contact</span>", "/contact", :class => "medium red button"
+        %hr{:align => "left", :width => "45%"}
     #gridWrapper
       = flash[:notice]
       = flash[:error]

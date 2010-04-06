@@ -1,10 +1,10 @@
 !!!
 %html
-    %head
-        = stylesheet_link_tag 'compiled/global.css'
+  %head
+    = stylesheet_link_tag 'compiled/global.css'
 
-    %body
-        = flash[:notice]
-        = flash[:error]
-        = yield
+  %body
+    = flash[:notice]
+    = flash[:error]
+    = yield
 
