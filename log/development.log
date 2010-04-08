@@ -4769,3 +4769,95 @@ Migrating to CreatePosts (20100323183103)
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("posts")[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-08 15:51:26) [GET]
+Rendering template within layouts/pages
+Rendered pages/_home (10.0ms)
+Completed in 9065ms (View: 9049, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-08 15:53:58) [GET]
+Rendering template within layouts/pages
+Rendered pages/_home (0.0ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-08 15:54:02) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 20ms (View: 14, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-08 15:54:04) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (83.0ms)
+Completed in 137ms (View: 133, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-08 15:54:05) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (4.0ms)
+Completed in 69ms (View: 62, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-08 15:54:06) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/pages
+Rendered pages/_about (4.0ms)
+Completed in 57ms (View: 50, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-08 15:54:07) [GET]
+  Parameters: {"page"=>"contact"}
+Rendering template within layouts/pages
+Rendered pages/_contact (4.0ms)
+Completed in 128ms (View: 122, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-08 15:54:09) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-08 15:59:32) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (0.0ms)
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-08 15:59:37) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (3.0ms)
+Completed in 20ms (View: 15, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-08 15:59:40) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (0.0ms)
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20100323183103)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("posts")[0m
