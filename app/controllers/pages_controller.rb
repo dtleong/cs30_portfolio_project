@@ -1,6 +1,9 @@
 class PagesController < ApplicationController
   def index
-    render :partial => params[:page], :layout => 'pages'
+    if params[:page]
+      render :partial => params[:page], :layout => 'pages'
+    else
+      render :partial => 'home', :layout => 'pages'
+    end
   end
-  
 end
