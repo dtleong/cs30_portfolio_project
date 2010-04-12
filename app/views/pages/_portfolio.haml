@@ -50,7 +50,8 @@
           code
     %br
     #list_item
-      Simulates a register in a store where the item number and quantity are input and a receipt with the total is printed. The inventory list is read in via a CSV Reader.
+      Simulates a register in a store where the item number and quantity are input and a receipt with the total is printed.
+      The inventory list is read in via a CSV Reader.
 
   .two-and-a-half.columns
     %br
@@ -66,11 +67,24 @@
           code
     %br
     #list_item
-      Simulates a hospital room list with 100 rooms. Doctors and patients can check in and out of rooms via user input in command line. Patients are matched with doctors based on requested medical specialty. Individual rooms feature wait-lists in case of patient overflow.
+      Simulates a hospital room list with 100 rooms. Doctors and patients can check in and out of rooms via user input in
+      command line. Patients are matched with doctors based on requested medical specialty. Individual rooms feature wait-lists in case
+      of patient overflow.
 
 .row
   .first.three-and-a-half.columns
-    &nbsp;
+    %blockquote
+      %ul
+        %li
+          %i
+            #list_item
+              In order to run these programs, please Install Ruby, download the program file and unzip the contents into
+              the Ruby bin folder. Ruby programs can be launched from command prompt by navigating to the Ruby bin folder and typing, 
+              "Ruby filename.rb"
+        %li
+          #list_item
+            = link_to "Download Ruby 1.91", "http://rubyforge.org/frs/download.php/69035/rubyinstaller-1.9.1-p378-rc2.exe"
+            for Windows.
   .two-and-a-half.columns
     %br
     #download
@@ -85,7 +99,8 @@
           code
     %br
     #list_item
-      Allows people to join a company, be promoted within a company, leave a company, and be unemployed. Will also display the list of employees for a company. The list of companies is created via a CSV Reader.
+      Allows people to join a company, be promoted within a company, leave a company, and be unemployed.
+      Will also display the list of employees for a company. The list of companies is created via a CSV Reader.
   .two-and-a-half.columns
     %br
     #download
@@ -101,4 +116,52 @@
     %br
     #list_item
       Takes a given word and creates all possible combinations of the letters in the world without duplicates.
-        
+%br
+%br
+%br
+.row
+  .first.three-and-a-half.columns
+    %font{:size => 4}
+      %u><
+        Previous Classes
+      \:
+    %br
+    %b
+      Introduction to&nbsp
+      %a(href="http://forms.westmont.edu/forms/syllabi/syllabus_archive/2009FA/Natural_and_Behavioral_Sciences/CS-010-1.PDF")><
+        Computer Science I
+      \. Fall 2009.
+    %br
+    %blockquote
+      %ul
+        %li
+          Taught in PLT Scheme, a purely functional, interpreted language.
+        %li
+          Focused on program design, problem solving, algorithm development, abstraction, recursion and object-orientation
+          within a functional language.
+        %li
+          DrScheme, the main PLT Scheme editor, can be downloaded&nbsp;
+          %a{:href => "http://www.plt-scheme.org/"}><
+            here
+          \.
+
+%br
+%br
+.row
+  .first.three-and-a-half.columns
+    %b
+      Morality, Information, Logic, and Knowledge.&nbsp
+      %a{:href => "http://homepage.westmont.edu/kimkihls/cs50.html"}><
+        MILK
+      \. Fall 2009
+    %br
+    %blockquote
+      %ul
+        %li
+          Introduces philosophy from the computer science perspective.
+        %li
+          Involves topics such as logic, metaphysics, epistemology, information theory,
+          combinatorics, gender roles in computing fields, and ethics.
+        %li
+          Sample paper on Ethical Theories:
+          = link_to "Ethics Paper", "http://sites.google.com/a/westmont.edu/daleong/downloads/daleongEthicsPaper.docx?attredirects=0", :id => 'download'

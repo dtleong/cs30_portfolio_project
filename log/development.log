@@ -6498,3 +6498,522 @@ Migrating to CreatePosts (20100323183103)
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("posts")[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:56:51) [GET]
+Rendering template within layouts/pages
+Rendered pages/_home (2.0ms)
+Completed in 2667ms (View: 2664, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:56:56) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (19.0ms)
+Completed in 31ms (View: 30, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:58:06) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (27.0ms)
+Completed in 41ms (View: 40, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:58:20) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (25.0ms)
+Completed in 37ms (View: 35, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:58:27) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (26.0ms)
+Completed in 38ms (View: 36, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:58:50) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (27.0ms)
+Completed in 40ms (View: 38, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:59:03) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (26.0ms)
+Completed in 42ms (View: 39, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:59:31) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (27.0ms)
+Completed in 39ms (View: 38, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 00:01:47) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (25.0ms)
+Completed in 37ms (View: 36, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:14:37) [GET]
+Rendering template within layouts/pages
+Rendered pages/_home (3.0ms)
+Completed in 2746ms (View: 2745, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:14:48) [GET]
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 31ms (View: 30, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:14:53) [GET]
+Rendering template within layouts/pages
+Rendered pages/_home (0.0ms)
+Completed in 28ms (View: 26, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:16:25) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (21.0ms)
+Completed in 33ms (View: 31, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:17:36) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (22.0ms)
+Completed in 66ms (View: 65, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:17:56) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (27.0ms)
+Completed in 40ms (View: 38, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:17:59) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (2.0ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:18:00) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (2.0ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:18:01) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (2.0ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:18:19) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (29.0ms)
+Completed in 42ms (View: 40, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:18:23) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (2.0ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:18:29) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (50.0ms)
+Completed in 69ms (View: 68, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:18:31) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (2.0ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:19:29) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (22.0ms)
+Completed in 34ms (View: 32, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:20:45) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (25.0ms)
+Completed in 41ms (View: 40, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:21:01) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (37.0ms)
+Completed in 54ms (View: 50, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:21:15) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (37.0ms)
+Completed in 55ms (View: 53, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:21:19) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (44.0ms)
+Completed in 58ms (View: 57, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:21:23) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (94.0ms)
+Completed in 116ms (View: 114, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:22:00) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (30.0ms)
+Completed in 42ms (View: 41, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:26:36) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (25.0ms)
+Completed in 37ms (View: 36, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:26:57) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (31.0ms)
+Completed in 42ms (View: 41, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:29:00) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (25.0ms)
+Completed in 69ms (View: 35, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:29:59) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (35.0ms)
+Completed in 46ms (View: 44, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:30:16) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (3.0ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-12 01:31:20) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+ERROR: compiling _run_haml_app47views47pages47_portfolio46haml_locals_object_portfolio RAISED C:/Users/Daniel/cs30_portfolio_project/app/views/pages/_portfolio.haml:167: syntax error, unexpected '\n', expecting tASSOC
+Function body:           def _run_haml_app47views47pages47_portfolio46haml_locals_object_portfolio(local_assigns)
+            old_output_buffer = output_buffer;portfolio = local_assigns[:portfolio];object = local_assigns[:object];;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:xhtml, :encoding=>"utf-8", :escape_html=>false});_erbout = _hamlout.buffer;__in_erb_template = true;;
+
+
+
+_hamlout.push_text("<head>\n  <title>\n    D. Leong - Portfolio\n  </title>\n</head>\n<b>\n", 1, false);_hamlout.open_tag("font", false, false, false, false, {}, false, false, nil, nil, :size => 5);
+_hamlout.rstrip!;
+
+
+
+
+
+
+_hamlout.push_text("<u>Westmont Classes</u></font>\n</b>\n<br />\n<br />\n<div class='row'>\n  <div class='first three-and-a-half columns'>\n", 0, true);_hamlout.open_tag("font", false, false, false, false, {}, false, false, nil, nil, :size => 4);
+_hamlout.rstrip!;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_hamlout.push_text("<u>Current Classes</u>:\n    </font>\n    <br />\n    <b>\n      Introduction to&nbsp<a href='https://docs.google.com/a/westmont.edu/viewer?a=v&amp;pid=sites&amp;srcid=d2VzdG1vbnQuZWR1fGRhbGVvbmd8Z3g6NWJhN2M1YTk4MTBlMDM2YQ'>Computer Science II</a>. Spring 2010.\n    </b>\n    <blockquote>\n      <ul>\n        <li>\n          Taught in&nbsp;<a href='http://www.ruby-lang.org/en/'>Ruby</a>, an interpreted, object-oriented language\n        </li>\n        <li>\n          Focused on data structures, algorithms, and abstract data types such as linked lists and trees.\n        </li>\n        <li>\n          Sample Programs are on the right.\n          <br />\n          <div id='list_item'>\n            &nbsp;&nbsp;&nbsp;Click code to download zip files.\n          </div>\n        </li>\n      </ul>\n    </blockquote>\n  </div>\n  <div class='two-and-a-half columns'>\n    <br />\n    <div id='download'>\n      #{haml_temp =  image_tag "rubylang.png", :width => '16.68', :height => '19.68'
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n      &nbsp;\n", 0, true);
+_hamlout.rstrip!;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_hamlout.push_text("<a href='/grocerystore' target='_blank'>Grocery Store</a><br />\n      <div id='list_item'>\n        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n        <a href='http://sites.google.com/a/westmont.edu/daleong/downloads/GroceryStore.zip?attredirects=0'>\n          code\n        </a>\n      </div>\n    </div>\n    <br />\n    <div id='list_item'>\n      Simulates a register in a store where the item number and quantity are input and a receipt with the total is printed.\n      The inventory list is read in via a CSV Reader.\n    </div>\n  </div>\n  <div class='two-and-a-half columns'>\n    <br />\n    <div id='download'>\n      #{haml_temp =  image_tag "rubylang.png", :width => '16.68', :height => '19.68'
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n      &nbsp;\n", 0, true);
+_hamlout.rstrip!;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_hamlout.push_text("<a href='/medclinic' target='_blank'>Medical Clinic</a><br />\n      <div id='list_item'>\n        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n        <a href='http://sites.google.com/a/westmont.edu/daleong/downloads/MedicalClinic.zip?attredirects=0'>\n          code\n        </a>\n      </div>\n    </div>\n    <br />\n    <div id='list_item'>\n      Simulates a hospital room list with 100 rooms. Doctors and patients can check in and out of rooms via user input in\n      command line. Patients are matched with doctors based on requested medical specialty. Individual rooms feature wait-lists in case\n      of patient overflow.\n    </div>\n  </div>\n</div>\n<div class='row'>\n  <div class='first three-and-a-half columns'>\n    <blockquote>\n      <ul>\n        <li>\n          <i>\n            <div id='list_item'>\n              In order to run these programs, please Install Ruby, download the program file and unzip the contents into\n              the Ruby bin folder. Ruby programs can be launched from command prompt by navigating to the Ruby bin folder and typing,\n              \"Ruby filename.rb\"\n            </div>\n          </i>\n        </li>\n        <li>\n          <div id='list_item'>\n            #{_hamlout.adjust_tabs(3); haml_temp =  link_to "Download Ruby 1.91", "http://rubyforge.org/frs/download.php/69035/rubyinstaller-1.9.1-p378-rc2.exe"
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n            for Windows.\n", 0, true);
+
+
+
+_hamlout.push_text("          </div>\n        </li>\n      </ul>\n    </blockquote>\n  </div>\n  <div class='two-and-a-half columns'>\n    <br />\n    <div id='download'>\n      #{_hamlout.adjust_tabs(-3); haml_temp =  image_tag "rubylang.png", :width => '16.68', :height => '19,68'
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n      &nbsp;\n", 0, false);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_hamlout.push_text("      <a href='/corporate' target='_blank'>\n        Corporate World\n      </a>\n      <br />\n      <div id='list_item'>\n        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n        <a href='http://sites.google.com/a/westmont.edu/daleong/downloads/CorporateWorld.zip?attredirects=0'>\n          code\n        </a>\n      </div>\n    </div>\n    <br />\n    <div id='list_item'>\n      Allows people to join a company, be promoted within a company, leave a company, and be unemployed.\n      Will also display the list of employees for a company. The list of companies is created via a CSV Reader.\n    </div>\n  </div>\n  <div class='two-and-a-half columns'>\n    <br />\n    <div id='download'>\n      #{haml_temp =  image_tag "rubylang.png", :width => '16.68', :height => '19.68'
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n      &nbsp;\n", 0, false);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_hamlout.push_text("      <a href='/permutations' target='_blank'>\n        Permutations\n      </a>\n      <br />\n      <div id='list_item'>\n        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n        <a href='http://sites.google.com/a/westmont.edu/daleong/downloads/Permutations.rb?attredirects=0'>\n          code\n        </a>\n      </div>\n    </div>\n    <br />\n    <div id='list_item'>\n      Takes a given word and creates all possible combinations of the letters in the world without duplicates.\n    </div>\n  </div>\n</div>\n<br />\n<br />\n<br />\n<div class='row'>\n  <div class='first three-and-a-half columns'>\n", -1, false);_hamlout.open_tag("font", false, false, false, false, {}, false, false, nil, nil, :size => 4);
+_hamlout.rstrip!;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_hamlout.push_text("<u>Previous Classes</u>:\n    </font>\n    <br />\n    <b>\n      Introduction to&nbsp<a href='http://forms.westmont.edu/forms/syllabi/syllabus_archive/2009FA/Natural_and_Behavioral_Sciences/CS-010-1.PDF'>Computer Science I</a>. Fall 2009.\n    </b>\n    <br />\n    <blockquote>\n      <ul>\n        <li>\n          Taught in PLT Scheme, a purely functional, interpreted language.\n        </li>\n        <li>\n          Focused on program design, problem solving, algorithm development, abstraction, recursion and object-orientation\n          within a functional language.\n        </li>\n        <li>\n          DrScheme, the main PLT Scheme editor, can be downloaded&nbsp;<a href='http://www.plt-scheme.org/'>here</a>.\n        </li>\n      </ul>\n    </blockquote>\n  </div>\n</div>\n<br />\n<br />\n<div class='row'>\n  <div class='first three-and-a-half columns'>\n    <b>\n      Morality, Information, Logic, and Knowledge.&nbsp<a href='http://homepage.westmont.edu/kimkihls/cs50.html'>MILK</a>. Fall 2009\n    </b>\n    <br />\n    <blockquote>\n      <ul>\n        <li>\n          Introduces philosophy from the computer science perspective.\n        </li>\n        <li>\n          Involves topics such as logic, metaphysics, epistemology, information theory,\n          combinatorics, gender roles in computing fields, and ethics.\n        </li>\n        <li>\n          Sample paper on Ethical Theories:\n          #{_hamlout.adjust_tabs(2); haml_temp =  link_to :id => 'download' "Ethics Paper", "http://sites.google.com/a/westmont.edu/daleong/downloads/daleongEthicsPaper.docx?attredirects=0"
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n        </li>\n      </ul>\n    </blockquote>\n  </div>\n</div>\n", -5, true);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_view/renderable.rb:77:in `module_eval'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_view/renderable.rb:77:in `compile!'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_view/renderable.rb:61:in `compile'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_view/renderable.rb:28:in `render'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_view/renderable_partial.rb:20:in `block in render'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:26:in `block in benchmark'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:26:in `benchmark'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_view/renderable_partial.rb:19:in `render'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_view/template.rb:205:in `render_template'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_view/renderable_partial.rb:44:in `render_partial'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_view/partials.rb:184:in `render_partial'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_view/base.rb:267:in `render'
+C:/Users/Daniel/cs30_portfolio_project/vendor/gems/haml-2.2.16/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/base.rb:971:in `render'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+C:/Users/Daniel/cs30_portfolio_project/app/controllers/pages_controller.rb:4:in `index'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/base.rb:1331:in `perform_action'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/flash.rb:146:in `perform_action_with_flash'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/base.rb:532:in `process'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_with_filters'
+C:/Users/Daniel/cs30_portfolio_project/vendor/gems/haml-2.2.16/lib/sass/plugin/rails.rb:19:in `process'
+C:/Users/Daniel/cs30_portfolio_project/vendor/gems/compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process_with_compass'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/base.rb:391:in `process'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/base.rb:386:in `call'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `call'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/activerecord/lib/active_record/query_cache.rb:29:in `block in call'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/activerecord/lib/active_record/query_cache.rb:9:in `cache'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/activerecord/lib/active_record/query_cache.rb:28:in `call'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Users/Daniel/College/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/Users/Daniel/College/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/params_parser.rb:15:in `call'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/failsafe.rb:26:in `call'
+C:/Users/Daniel/College/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:8:in `synchronize'
+C:/Users/Daniel/College/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `block in call'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/reloader.rb:34:in `run'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/railties/lib/rails/rack/static.rb:31:in `call'
+C:/Users/Daniel/College/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+C:/Users/Daniel/College/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/Users/Daniel/College/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/Users/Daniel/cs30_portfolio_project/vendor/rails/railties/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Users/Daniel/College/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/Users/Daniel/College/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+ActionView::TemplateError (C:/Users/Daniel/cs30_portfolio_project/app/views/pages/_portfolio.haml:167: syntax error, unexpected '\n', expecting tASSOC) on line #167 of app/views/pages/_portfolio.haml:
+164:           combinatorics, gender roles in computing fields, and ethics.
+165:         %li
+166:           Sample paper on Ethical Theories:
+167:           = link_to :id => 'download' "Ethics Paper", "http://sites.google.com/a/westmont.edu/daleong/downloads/daleongEthicsPaper.docx?attredirects=0" 
+
+    haml (2.2.16) [v] lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    app/controllers/pages_controller.rb:4:in `index'
+    haml (2.2.16) [v] lib/sass/plugin/rails.rb:19:in `process'
+    compass (0.8.17) [v] lib/compass/app_integration/rails/action_controller.rb:7:in `process_with_compass'
+    <internal:prelude>:8:in `synchronize'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (107.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20100323183103)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("posts")[0m
