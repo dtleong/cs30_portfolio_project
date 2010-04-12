@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="8625e50b-465e-44d9-b9d1-14054f501ab6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/pages.haml" afterPath="$PROJECT_DIR$/app/views/layouts/pages.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/compiled/global.css" afterPath="$PROJECT_DIR$/public/stylesheets/compiled/global.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/_home.haml" afterPath="$PROJECT_DIR$/app/views/pages/_home.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/rubylang.png" afterPath="$PROJECT_DIR$/public/images/rubylang.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/stylesheets/partials/_typography.sass" afterPath="$PROJECT_DIR$/app/stylesheets/partials/_typography.sass" />
     </list>
     <ignored path=".idea/workspace.xml" />
@@ -48,10 +49,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_typography.sass" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_typography.sass" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/stylesheets/partials/_typography.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="18" selection-start="131" selection-end="131" vertical-scroll-proportion="0.24056605">
+            <state line="6" column="18" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pages.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/pages.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="79" selection-start="97" selection-end="97" vertical-scroll-proportion="0.12469438">
               <folding />
             </state>
           </provider>
@@ -86,10 +96,10 @@
         <option value="$PROJECT_DIR$/app/views/pages/_grocerystore.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pages/_grocerystore.erb" />
         <option value="$PROJECT_DIR$/app/stylesheets/global.sass" />
-        <option value="$PROJECT_DIR$/app/views/layouts/pages.haml" />
         <option value="$PROJECT_DIR$/app/views/pages/_portfolio.haml" />
         <option value="$PROJECT_DIR$/app/views/pages/_home.haml" />
         <option value="$PROJECT_DIR$/app/stylesheets/partials/_typography.sass" />
+        <option value="$PROJECT_DIR$/app/views/layouts/pages.haml" />
       </list>
     </option>
   </component>
@@ -188,6 +198,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs30_portfolio_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs30_portfolio_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -536,13 +568,6 @@
         <state line="66" column="16" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/pages.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="45" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/stylesheets/partials/_colors.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="14" selection-start="108" selection-end="115" vertical-scroll-proportion="0.0" />
@@ -564,7 +589,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/stylesheets/partials/_typography.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="18" selection-start="131" selection-end="131" vertical-scroll-proportion="0.24056605">
+        <state line="6" column="18" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/pages.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="79" selection-start="97" selection-end="97" vertical-scroll-proportion="0.12469438">
           <folding />
         </state>
       </provider>
