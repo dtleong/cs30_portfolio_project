@@ -1,0 +1,133 @@
+<title>
+  D. Leong - Grocery Store code
+</title>
+
+
+<pre>
+# Purpose: to represent an item in a store's inventory
+class InventoryItem
+    attr_reader :product_num
+    attr_reader :description
+    attr_reader :price
+    attr_reader :tax
+
+    def initialize(pn, de, price, tax)
+        @product_num = pn
+        @description = de
+        @price = price
+        @tax = tax
+    end
+end
+
+class CsvReader
+    attr_reader :inventory
+
+    def initialize
+        @inventory = []
+    end
+
+    def read_in_csv_data(file_name)
+        CSV.foreach(file_name, headers: true) do |row|
+        @inventory << InventoryItem.new(row["product number"], row["description"], row["price"], row["tax"])
+        end
+    end
+end
+
+supermarket = CsvReader.new
+
+supermarket.read_in_csv_data("inventory.csv")
+
+
+$inventory = supermarket.inventory
+$customer_num = 1
+
+
+#Purpose: to serve the appropriate number of customers
+def register
+    while true
+        customer
+        puts "Another customer? (Y/N)"
+        line = gets.chomp
+        if line == "N"
+            puts "Thanks for shopping!"
+            break
+        end
+    end
+end
+
+#Purpose: get the purchase list of a single customer
+def customer
+    order = []
+    while true
+    puts "Enter order (PN Q) or E to end:"
+        s = gets.chomp
+        if s == "E"
+            break
+        else
+            a = s.split(/ /)
+            a[1] = a[1].to_i
+            order << a
+        end
+    end
+    receipt(order)
+end
+
+#Purpose: to print out the appropriate receipt given the order
+def receipt(order)
+    sub = 0
+    tax = 0
+    puts "Customer #{$customer_num}"
+    $customer_num += 1
+    order.each do |purchase|
+        item = get_item(purchase[0])
+        if item == "*** item not found ***"
+                puts "*** item #{purchase[0]} not in inventory ***"
+        elsif purchase[1] <= 0
+            puts "*** invalid quanitity ***"
+        else
+            pq = item.price.to_f * purchase[1]
+            sub += pq
+            if item.tax == "T"
+                tax += (pq * 0.075)
+            end
+        printf("#{item.description}\t%3i @ $#{item.price}\t$#{pq}\n", purchase[1])
+        end
+    end
+    printf("\nSubtotal:\t\t\t$%3.2f\n", sub)
+    printf("Tax:\t\t\t\t$%3.2f\n", tax)
+    printf("Total:\t\t\t\t$%3.2f\n", sub+tax)
+end
+
+#Purpose: checks to see if the given product number is in the inventory
+def get_item(pn)
+    $inventory.each do |item|
+        if pn == item.product_num
+            return item
+        end
+    end
+    return "*** item not found ***"
+end
+
+
+
+
+require 'test/unit'
+class TestInventory < Test::Unit::TestCase
+    ITEM = [[11110, "Gallon of Milk", 2.35, "N"]]
+    def test_inventory
+        ITEM.each do |product_num, description, price, tax|
+        i = InventoryItem.new(11110, "Gallon of Milk", 2.35, "N")
+        assert_equal(product_num, i.product_num)
+        assert_equal(description, i.description)
+        assert_equal(price, i.price)
+        assert_equal(tax, i.tax)
+        end
+    end
+
+    def test_csv1
+        c = CsvReader.new
+        c.read_in_csv_data("inventory.csv")
+        assert_equal(c.read_in_csv_data("inventory.csv"), nil)
+    end
+end
+</pre>

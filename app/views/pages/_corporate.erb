@@ -1,0 +1,723 @@
+<pre>
+require 'csv'
+class Operations
+
+  def initialize
+    c = CsvReader.new
+    c.read_in_csv_data("Company.csv")
+    @companies = c.companies
+    @unemployed = LinkedList.new
+  end
+
+  #Gets input from user on which command to execute
+  def cmd_sorter
+    while true
+      printf("\nPlease input one of the following:")
+      printf("\n\tJoin to employ a person")
+      printf("\n\tQuit to fire an employee")
+      printf("\n\tChange to switch employee's company")
+      printf("\n\tPromote to promote employee")
+      printf("\n\tDemote to demote employee")
+      printf("\n\tPayday to pay ever person")
+      printf("\n\tEmployees to display list of people")
+      printf("\n\tUnemployed to display unemployed people")
+      printf("\n\tList to display all people and earnings per affiliation")
+      printf("\n\tExit to end sessionn\n\n")
+      input = gets.chomp.upcase
+      case input
+        when "JOIN" then
+          join
+        when "QUIT" then
+          quit
+        when "CHANGE" then
+          change
+        when "PROMOTE" then
+          promote
+        when "DEMOTE" then
+          demote
+        when "PAYDAY" then
+          payday
+        when "EMPLOYEES" then
+          employees
+        when "UNEMPLOYED" then
+          unemployed
+        when "LIST" then
+          list
+        when "EXIT" then
+          break
+        else
+          printf("\tInvalid Command\n\n")
+      end
+    end
+  end
+
+# takes a name and company from command prompt and enters the person into the company
+  def join
+    a = 0
+    i = nil
+    printf("Enter name: ")
+    name = gets.chomp
+    while a == 0
+      printf("Enter company: ")
+      co = gets.chomp
+      @companies.each {|company|
+        if co == company.name
+          a += 1
+        end }
+      if a == 0
+        printf("\tInvalid company name\n")
+      end
+    end
+    @companies.each {|company|
+      item = company.employees.search(name)
+      if item != nil
+        i = item
+      end}
+    if i == nil
+      u = @unemployed.search(name)
+      if u != nil
+        i = u
+	@unemployed.delete_item(u)
+      end
+    end
+    if i != nil
+      @companies.each {|company|
+        person = company.employees.search(i.name)
+        if person != nil
+          company.employees.delete_item(i)
+        elsif co == company.name
+          company.employees.insert_first(i)
+          printf("\t#{name} has been hired by #{company.name}\n")
+        end }
+    else
+      p = Person.new(name)
+      @companies.each {|company|
+        if co == company.name
+          company.employees.insert_first(p)
+          printf("\t#{name} has been hired by #{company.name}\n")
+        end}
+    end
+  end
+
+# takes a name and removes that person from their company
+  def quit
+    printf("Enter name: ")
+    name = gets.chomp
+    person = nil
+    @companies.each {|company|
+      person = company.employees.search(name)
+      if person != nil
+        @unemployed.insert_first(person)
+        company.employees.delete_item(person)
+        printf("\t\t#{name} is now unemployed.\n\n")
+      end}
+    if person != nil
+      printf("#{name} was not found\n")
+    end
+  end
+
+# takes a name and company, removes the person from their current company and puts them into the new one
+  def change
+    a = 0
+    i = nil
+    printf("Enter name: ")
+    name = gets.chomp
+    while a == 0
+      printf("Enter company: ")
+      co = gets.chomp
+      @companies.each {|company|
+        if co == company.name
+          a += 1
+        end }
+      if a == 0
+        printf("\tInvalid company name")
+      end
+    end
+    @companies.each {|company|
+      item = company.employees.search(name)
+      if item != nil
+        i = item
+      end }
+    if i != nil
+      @companies.each {|company|
+        person = company.employees.search(i.name)
+        if person != nil
+          company.employees.delete_item(i)
+        elsif co == company.name
+          company.employees.insert_first(i)
+          printf("\t#{name} has been hired by #{company.name}\n")
+        end }
+    else
+      printf("#{name} was not found\n")
+    end
+  end
+
+# takes a name and promotes that person up one spot in their company
+  def promote
+    a = 0
+    printf("Enter name: ")
+    name = gets.chomp
+    @companies.each {|company|
+      i = company.employees.search(name)
+      if i != nil
+        b = company.employees.find_pos(i)
+        company.employees.promote(i)
+        a += 1
+        if company.employees.find_pos(i) == b
+          printf("\t#{name} cannot be promoted.\n")
+        else
+          printf("\t#{name} has been promoted.\n")
+        end
+      end}
+      if a == 0
+        printf("\t#{name} was not found.\n")
+      end
+  end
+
+# takes a name and demotes that person down one spot in their company
+  def demote
+    a = 0
+    printf("Enter name: ")
+    name = gets.chomp
+    @companies.each {|company|
+      i = company.employees.search(name)
+      if i != nil
+        b = company.employees.find_pos(i)
+        company.employees.demote(i)
+        a += 1
+        if company.employees.find_pos(i) == b
+          printf("\t#{name} cannot be demoted.\n")
+        else
+          printf("\t#{name} has been demoted.\n")
+        end
+      end}
+      if a == 0
+        printf("\t#{name} was not found.\n")
+      end
+
+  end
+
+# gives each person their specified amount of money
+  def payday
+    @companies.each {|company| company.payday}
+    @unemployed.each_item {|item|
+      b = item.money
+      item.money = b + 50
+    }
+  end
+
+# takes a company name and prints its list of employees
+  def employees
+    a = 0
+    while a == 0
+      printf("Enter company: ")
+      co = gets.chomp
+      @companies.each {|company|
+        if co == company.name
+          a += 1
+        end }
+      if a == 0
+        printf("\tInvalid company name\n\n")
+      end
+    end
+    @companies.each {|company|
+      if co == company.name
+        printf("\t#{company.name}\n")
+        company.employees.each_item {|item|
+          printf("#{item.name}, $#{item.money}\n")
+        }
+      end }
+  end
+
+
+  def unemployed
+    printf("\tUnemployed\n")
+    @unemployed.each_item {|item|
+      puts item.name}
+  end
+
+# prints all the people in an employed and unemployed list
+  def list
+    @companies.each {|company|
+      printf("\t#{company.name}\n")
+      company.employees.each_item {|item|
+        puts "#{item.name}, $#{item.money}"}}
+    printf("\tUnemployed\n")
+    @unemployed.each_item {|item|
+      puts "#{item.name}, $#{item.money}"}
+  end
+end
+
+
+# Class Node represents a node in a doubly linked list
+#require_relative 'Person'
+
+class Node
+
+  attr_accessor :item
+  attr_accessor :prev
+  attr_accessor :next
+
+  def initialize(item)
+    @item = item
+    @prev = nil
+    @next = nil
+  end
+
+  def to_s
+    "\n  Item: #{@item}\n  Prev: #{@prev}\n  Next: #{@next}"
+  end
+end
+
+
+#creates a Company class composed of a name and a Linked List
+class Company
+
+  attr_reader   :name
+  attr_accessor :employees
+
+  def initialize(n)
+    @name = n
+    @employees = LinkedList.new
+  end
+
+#pays all employees in the company
+  def payday
+    a = 1
+    employees.each_item {|item|
+      b = item.money
+      item.money = b + (a * 1000)
+      a += 1
+      }
+  end
+end
+
+
+
+#creates a Person class consisting of a name and a number field
+class Person
+
+  attr_reader :name
+  attr_accessor :money
+
+  def initialize(n)
+    @name = n
+    @money = 0
+  end
+end
+
+
+
+# Class List represents an unsorted doubly linked list
+# with a header and trailer node
+
+class LinkedList
+  include Enumerable
+
+  attr_reader :size
+
+  def initialize
+    @header = Node.new nil
+    @trailer = Node.new nil
+    @header.next = @trailer
+    @trailer.prev = @header
+    @size = 0
+  end
+
+  def insert_last(item)
+    node = Node.new(item)
+    node.next = @trailer
+    node.prev = @trailer.prev
+    @trailer.prev.next = node
+    @trailer.prev = node
+    @size += 1
+  end
+
+  def insert_first(item)
+    node = Node.new(item)
+    node.prev = @header
+    node.next = @header.next
+    @header.next.prev = node
+    @header.next = node
+    @size += 1
+  end
+
+  def last_item
+    return @trailer.prev.item
+  end
+
+  def first_item
+    return @header.next.item
+  end
+
+  def delete_last
+    return nil if @size <= 0
+    node = @trailer.prev
+    node.prev.next = @trailer
+    @trailer.prev = node.prev
+    @size -= 1
+    return node.item
+  end
+
+  def delete_first
+    return nil if @size <= 0
+    node = @header.next
+    node.next.prev = @header
+    @header.next = node.next
+    @size -= 1
+    return node.item
+
+  end
+
+  def delete_item(item)
+    return nil if @size <= 0
+    node = @header.next
+    while node != @trailer
+      if node.item == item
+        node.next.prev = node.prev
+        node.prev.next = node.next
+        @size -= 1
+        return node.item
+      end
+      node = node.next
+    end
+    # If got to here, item was not found
+    return nil
+  end
+
+  def find_pos(item)
+    return nil if @size <= 0
+    pos = 1
+    node = @header.next
+    while node != @trailer
+      return pos if node.item == item
+      node = node.next
+      pos += 1
+    end
+    # If got to here, item was not found
+    return nil
+  end
+
+  def each_item
+    node = @header.next
+    while node != @trailer
+      yield node.item
+      node = node.next
+    end
+  end
+
+  def each_node
+    node = @header.next
+    while node != @trailer
+      yield node
+      node = node.next
+    end
+  end
+
+  def find_node(item)
+    each_node {|node|
+      return node if item == node.item}
+  end
+
+  def to_s
+    s = "List:\n"
+    each_item {|item| s += "  Item: #{item}\n"}
+    return s
+  end
+
+  def promote(item)
+    node = find_node(item)
+    if node.next == @trailer
+      return false
+    else
+      node.prev.next = node.next
+      node.next = node.next.next
+      node.next.prev = node
+      node.prev.next.prev = node.prev
+      node.prev.next.next = node
+      node.prev = node.prev.next
+      return true
+    end
+  end
+
+  def demote(item)
+    p_node = find_node(item).prev
+    if p_node == @header
+      return false
+    else
+      promote(p_node.item)
+      return true
+    end
+  end
+
+  def insert(item)
+    recursive_insert(item, @header.next)
+  end
+
+  private
+  def recursive_insert(item, location)
+    if location.item == nil or item < location.item
+      new_node = Node.new(item)
+      new_node.prev = location.prev
+      new_node.next = location
+      location.prev.next = new_node
+      location.prev = new_node
+      @size += 1
+    else
+      recursive_insert(item, location.next)
+    end
+  end
+
+  public
+
+
+  def search(item)
+    return nil if @size <= 0
+    node = @header.next
+    while node != @trailer
+      if node.item.name == item
+        return node.item
+      end
+      node = node.next
+    end
+    # If got to here, item was not found
+    return nil
+  end
+end
+
+
+class CsvReader
+  attr_reader :companies
+
+  def initialize
+    @companies = []
+  end
+
+  def read_in_csv_data(file_name)
+    CSV.foreach(file_name, headers: false) do |row|
+    @companies << Company.new(row[0])
+  end
+end
+
+
+
+
+require 'test/unit'
+
+class Test_1 < Test::Unit::TestCase
+  def test_insert1
+    l = LinkedList.new
+    l.insert_first(5)
+    l.insert_first(4)
+    l.insert_first(2)
+    l.insert_first(1)
+    l.insert(3)
+    assert_equal(l.find_pos(3), 3)
+    l.insert(0)
+    assert_equal(l.find_pos(0), 1)
+  end
+
+  def test_insert2
+    l = LinkedList.new
+    l.insert(1)
+    assert_equal(1, l.find_pos(1))
+  end
+
+=begin
+  def test_search
+    p1 = Person.new("a")
+    p2 = Person.new("b")
+    p3 = Person.new("c")
+    l = LinkedList.new
+    l.insert_first(p1)
+    l.insert_first(p2)
+    l.insert_first(p3)
+    assert_equal(p2, l.search("b"))
+    assert_equal(p1, l.search("a"))
+  end
+end
+=end
+
+  class TestNode < Test::Unit::TestCase
+
+    def test_basic
+      n1 = Node.new("A")
+      assert_equal(n1.item, "A")
+      assert_equal(n1.prev, nil)
+      assert_equal(n1.next, nil)
+      n2 = Node.new("B")
+      assert_equal(n2.item, "B")
+      assert_equal(n2.prev, nil)
+      assert_equal(n2.next, nil)
+      n1.next = n2
+      assert_equal(n1.next, n2)
+    end
+  end
+
+  class TestLinkedList < Test::Unit::TestCase
+
+    def test_basic
+      l = LinkedList.new
+      assert_equal(l.size, 0)
+      l.insert_first("A")
+      assert_equal(l.size, 1)
+      l.insert_last("Z")
+      assert_equal(l.size, 2)
+      l.delete_last
+      assert_equal(l.size, 1)
+      l.delete_first
+      assert_equal(l.size, 0)
+      l.delete_last
+      assert_equal(l.size, 0)
+    end
+
+    def test_delete_first
+      l = LinkedList.new
+      l.insert_first("B")
+      assert_equal("B", l.first_item)
+      assert_equal("B", l.last_item)
+      l.insert_first("A")
+      assert_equal("A", l.first_item)
+      assert_equal("B", l.last_item)
+      l.insert_last("Z")
+      assert_equal("A", l.first_item)
+      assert_equal("Z", l.last_item)
+      assert_equal( "A", l.delete_first)
+      assert_equal( "B", l.delete_first)
+      assert_equal( "Z", l.delete_first)
+      assert_equal( nil, l.delete_first)
+    end
+
+    def test_delete_last
+      l = LinkedList.new
+      l.insert_first("B")
+      assert_equal("B", l.first_item)
+      assert_equal("B", l.last_item)
+      l.insert_first("A")
+      assert_equal("A", l.first_item)
+      assert_equal("B", l.last_item)
+      l.insert_last("Z")
+      assert_equal("A", l.first_item)
+      assert_equal("Z", l.last_item)
+      assert_equal( "Z", l.delete_last)
+      assert_equal( "B", l.delete_last)
+      assert_equal( "A", l.delete_last)
+      assert_equal( nil, l.delete_last)
+    end
+
+    def test_delete_item
+      l = LinkedList.new
+      l.insert_first("B")
+      l.insert_first("A")
+      l.insert_last("Z")
+      assert_equal( "B", l.delete_item("B"))
+      assert_equal( nil, l.delete_item("B"))
+      assert_equal( "A", l.delete_item("A"))
+      assert_equal( "Z", l.delete_item("Z"))
+      assert_equal( nil, l.delete_item("Z"))
+    end
+
+    def test_size
+      l = LinkedList.new
+      assert_equal( 0, l.size)
+      l.insert_first("B")
+      assert_equal( 1, l.size)
+      l.insert_first("A")
+      l.insert_last("Z")
+      assert_equal( 3, l.size)
+      l.delete_item("B")
+      assert_equal( 2, l.size)
+      l.delete_item("B")
+      assert_equal( 2, l.size)
+      l.delete_item("A")
+      assert_equal( 1, l.size)
+      l.delete_item("Z")
+      assert_equal( 0, l.size)
+      l.delete_item("Z")
+      assert_equal( 0, l.size)
+    end
+
+    def test_find_pos
+      l = LinkedList.new
+      l.insert_first("B")
+      assert_equal( 1, l.find_pos("B"))
+      l.insert_first("A")
+      assert_equal( 1, l.find_pos("A"))
+      assert_equal( 2, l.find_pos("B"))
+      l.insert_last("Z")
+      assert_equal( 1, l.find_pos("A"))
+      assert_equal( 2, l.find_pos("B"))
+      assert_equal( 3, l.find_pos("Z"))
+      l.delete_item("B")
+      assert_equal( 1, l.find_pos("A"))
+      assert_equal( 2, l.find_pos("Z"))
+      assert_equal( nil, l.find_pos("B"))
+      l.delete_item("A")
+      assert_equal( 1, l.find_pos("Z"))
+      l.delete_item("Z")
+      assert_equal( nil, l.find_pos("Z"))
+    end
+
+    def test_promote
+      l = LinkedList.new
+      l.insert_first("D")
+      l.insert_first("C")
+      l.insert_first("B")
+      l.insert_first("A")
+      assert_equal(false, l.promote("D"))
+      assert_equal("D", l.last_item)
+      assert_equal(true, l.promote("C"))
+      assert_equal("C", l.last_item)
+      assert_equal(true, l.promote("A"))
+      assert_equal(true, l.promote("A"))
+      assert_equal(true, l.promote("A"))
+      assert_equal("A", l.last_item)
+    end
+
+    def test_demote
+      l = LinkedList.new
+      l.insert_first("D")
+      l.insert_first("C")
+      l.insert_first("B")
+      l.insert_first("A")
+      assert_equal(false, l.demote("A"))
+      assert_equal("A", l.first_item)
+      assert_equal(l.demote("B"), true)
+      assert_equal("B", l.first_item)
+      assert_equal(true, l.demote("D"))
+      assert_equal(true, l.demote("D"))
+      assert_equal(true, l.demote("D"))
+      assert_equal("D", l.first_item)
+    end
+  end
+end
+
+
+class Test_Company < Test::Unit::TestCase
+  def test1
+    c = Company.new("Macy")
+    p1 = Person.new("a")
+    p2 = Person.new("b")
+    assert_equal("Macy", c.name)
+    assert_equal(0, c.employees.size)
+    c.employees.insert_first(p2)
+    c.employees.insert_first(p1)
+    c.payday
+    assert_equal(1000, c.employees.search("a").money)
+    c.employees.promote(p1)
+    assert_equal(1, c.employees.find_pos(p2))
+    assert_equal(2000, c.employees.search("b").money)
+  end
+end
+
+
+class Test_Person < Test::Unit::TestCase
+  def test1
+    p = Person.new("a")
+    assert_equal("a", p.name)
+    assert_equal(0, p.money)
+    p.money = 1500
+    assert_equal(1500, p.money)
+  end
+end
+</pre>

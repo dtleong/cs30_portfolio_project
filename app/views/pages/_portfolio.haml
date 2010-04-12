@@ -1,4 +1,104 @@
 %head
   %title
-    Portfolio
-%body
+    D. Leong - Portfolio
+%b
+  %font{:size => 5}
+    %u><
+      Westmont Classes
+%br
+%br
+
+.row
+  .first.three-and-a-half.columns
+    %font{:size => 4}
+      %u><
+        Current Classes
+      \:
+    %br
+    %b
+      Introduction to&nbsp
+      %a(href="https://docs.google.com/a/westmont.edu/viewer?a=v&pid=sites&srcid=d2VzdG1vbnQuZWR1fGRhbGVvbmd8Z3g6NWJhN2M1YTk4MTBlMDM2YQ")><
+        Computer Science II
+      \. Spring 2010.
+
+    %blockquote
+      %ul
+        %li
+          Taught in&nbsp;
+          %a(href="http://www.ruby-lang.org/en/")><
+            Ruby
+          , an interpreted, object-oriented language
+        %li
+          Focused on data structures, algorithms, and abstract data types such as linked lists and trees.
+        %li
+          Sample Programs are on the right.
+          %br
+          #list_item
+            &nbsp;&nbsp;&nbsp;Click code to download zip files.
+
+  .two-and-a-half.columns
+    %br
+    #download
+      = image_tag "rubylang.png", :width => '16.68', :height => '19.68'
+      &nbsp;
+      %a{:href => "/grocerystore", :target => "_blank"}><
+        Grocery Store
+      %br
+      #list_item
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        %a{:href => "http://sites.google.com/a/westmont.edu/daleong/downloads/GroceryStore.zip?attredirects=0"}
+          code
+    %br
+    #list_item
+      Simulates a register in a store where the item number and quantity are input and a receipt with the total is printed. The inventory list is read in via a CSV Reader.
+
+  .two-and-a-half.columns
+    %br
+    #download
+      = image_tag "rubylang.png", :width => '16.68', :height => '19.68'
+      &nbsp;
+      %a{:href => "/medclinic", :target => "_blank"}><
+        Medical Clinic
+      %br
+      #list_item
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        %a{:href => "http://sites.google.com/a/westmont.edu/daleong/downloads/MedicalClinic.zip?attredirects=0"}
+          code
+    %br
+    #list_item
+      Simulates a hospital room list with 100 rooms. Doctors and patients can check in and out of rooms via user input in command line. Patients are matched with doctors based on requested medical specialty. Individual rooms feature wait-lists in case of patient overflow.
+
+.row
+  .first.three-and-a-half.columns
+    &nbsp;
+  .two-and-a-half.columns
+    %br
+    #download
+      = image_tag "rubylang.png", :width => '16.68', :height => '19,68'
+      &nbsp;
+      %a{:href => "/corporate", :target => "_blank"}
+        Corporate World
+      %br
+      #list_item
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        %a{:href => "http://sites.google.com/a/westmont.edu/daleong/downloads/CorporateWorld.zip?attredirects=0"}
+          code
+    %br
+    #list_item
+      Allows people to join a company, be promoted within a company, leave a company, and be unemployed. Will also display the list of employees for a company. The list of companies is created via a CSV Reader.
+  .two-and-a-half.columns
+    %br
+    #download
+      = image_tag "rubylang.png", :width => '16.68', :height => '19.68'
+      &nbsp;
+      %a{:href => "/permutations", :target => "_blank"}
+        Permutations
+      %br
+      #list_item
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        %a{:href => "http://sites.google.com/a/westmont.edu/daleong/downloads/Permutations.rb?attredirects=0"}
+          code
+    %br
+    #list_item
+      Takes a given word and creates all possible combinations of the letters in the world without duplicates.
+        

@@ -1,0 +1,302 @@
+<pre>
+#Creates all rooms listed for the Clinic and manages all scheduling inside
+class Clinic
+
+  attr_reader :rooms
+
+  def initialize
+    @rooms = []
+    make_rooms
+  end
+
+
+#Creates a list of all the rooms in a hospital.
+  def make_rooms
+    100.times do |n|
+      @rooms << Room.new(n+1)
+    end
+  end
+
+#Gets input from user on which command to execute
+  def cmd_sorter
+    while true
+      printf("\nPlease input one of the following:")
+      printf("\n\t1 for Doctor  Check-in")
+      printf("\n\t2 for Doctor  Check-out")
+      printf("\n\t3 for Patient Check-in")
+      printf("\n\t4 for Patient Check-out")
+      printf("\n\t5 to  Exit\n\n")
+      input = gets.chomp.to_i
+      case input
+        when 1 then
+          doc_check_in
+        when 2 then
+          doc_check_out
+        when 3 then
+          pat_check_in
+        when 4 then
+          pat_check_out
+        when 5 then
+          break
+        else
+          printf("\tInvalid Command\n\n")
+      end
+    end
+  end
+
+#Assigns a doctor to a room
+  def doc_check_in
+    printf("Enter name: ")
+    name = gets.chomp
+    printf("Enter room number: ")
+    num = gets.chomp.to_i
+    until num >= 1 && num <= 100
+      printf("\tinvalid room number (1 - 100)\n")
+      printf("Enter room number: ")
+      num = gets.chomp.to_i
+    end
+    printf("Enter specialty code: ")
+    code = gets.chomp
+    until code == "PED" or code == "GEN" or code == "INT" or code == "CAR" or code == "SUR" or code == "OBS" or code == "PSY" or code == "NEU" or code == "ORT" or code == "DER" or code == "OPT" or code == "ENT"
+      printf("\tInvalid Specialty Code. Enter one of the following:\n\t\tGEN: General practice\n\t\tCAR: Cardiology\n\t\tDER: Dermatology\n\t\tENT: Ear, Nose, and Throat\n\t\tINT  : Internal medicine\n\t\tNEU: Neurology\n\t\tOBS: Obstetrics\n\t\tOPT: Ophthalmology\n\t\tORT: Orthopedics\n\t\tPED: Pediatrics\n\t\tPSY: Psychiatry\n\t\tSUR: Surgery\n")
+      printf("Enter specialty code: ")
+      code = gets.chomp
+    end
+    d = Doctor.new(name, num, code)
+    @rooms.each { |room|
+      if room.number == d.room_number
+        if room.doctor == nil
+          room.doctor = d
+          printf("\t\t#{d.name} is assigned to room #{room.number}\n\n")
+        else
+          printf("Sorry, room #{d.room_number} is occupied. You may sign in again.\n")
+        end
+      end}
+  end
+
+#Removes a given doctor from a room and reassigns the patients remaining in the room
+  def doc_check_out
+    printf("Enter name: ")
+    doc = gets.chomp
+    doc_check_out = 0
+    @rooms.each { |room|
+      if room.doctor != nil && room.doctor.name == doc
+        doc_check_out += 1
+        printf("\t\tHave a nice day #{room.doctor.name}\n\n")
+        room.doctor = nil
+        if room.patient != nil
+          room.queue.push(room.patient)
+          room.patient = nil
+        end
+        reassign(room.queue)
+        room.queue = []
+      end }
+    if doc_check_out == 0
+      printf("\t\t#{doc} not found in room list\n\n")
+    end
+  end
+
+
+  def pat_check_in
+    printf("Enter name: ")
+    name = gets.chomp
+    printf("Enter age: ")
+    num = gets.chomp.to_i
+    if num < 16
+      code = "PED"
+    else
+      printf("Enter requested specialty: ")
+      code = gets.chomp
+      until code == "GEN" or code == "PED" or code == "INT" or code == "CAR" or code == "SUR" or code == "OBS" or code == "PSY" or code == "NEU" or code == "ORT" or code == "DER" or code == "OPT" or code == "ENT"
+        printf("\tInvalid Specialty Code. Enter one of the following:\n\t\tGEN: General practice\n\t\tCAR: Cardiology\n\t\tDER: Dermatology\n\t\tENT: Ear, Nose, and Throat\n\t\tINT  : Internal medicine\n\t\tNEU: Neurology\n\t\tOBS: Obstetrics\n\t\tOPT: Ophthalmology\n\t\tORT: Orthopedics\n\t\tPED: Pediatrics\n\t\tPSY: Psychiatry\n\t\tSUR: Surgery\n")
+        printf("Enter requested specialty: ")
+        code = gets.chomp
+      end
+    end
+    p = Patient.new(name, num, code)
+    assign(p)
+  end
+
+
+  def pat_check_out
+    printf("Enter name: ")
+    name = gets.chomp
+    printf("Enter room number: ")
+    num = gets.chomp.to_i
+    num = num - 1
+    until num >= 1 and num <= 100
+      printf("Invalid Room Number\n\n")
+      printf("Enter room number: ")
+      num = gets.chomp.to_i
+    end
+    if @rooms[num].patient != nil
+      if @rooms[num].patient.name == name
+        printf("\t\tGoodbye #{name}\n\n")
+        @rooms[num].patient = nil
+        unless @rooms[num].queue.empty?
+          @rooms[num].patient = @rooms[num].queue.shift
+          printf("\t\t#{@rooms[num].patient.name} has been checked into room #{@rooms[num].number}\n\n")
+        end
+      else
+        printf("Patient is not in the specified room.\n\n")
+      end
+    end
+  end
+
+
+  def reassign(queue)
+    queue.each { |patient| assign(patient) }
+  end
+
+  def assign(patient)
+    room_list = []
+    @rooms.each { |room|
+      if room.doctor != nil && room.doctor.specialty == patient.specialty
+        room_list << room
+      end }
+    if room_list.empty?
+      @rooms.each { |room|
+        if room.doctor != nil && room.doctor.specialty == "GEN"
+          room_list << room
+        end }
+    end
+    if room_list.empty?
+      @rooms.each { |room|
+        if room.doctor != nil
+          room_list << room
+        end }
+    end
+    find_shortest(room_list, patient)
+  end
+
+  def find_shortest(list, pat)
+    if !list.empty?
+      list.sort! {|a, b|
+        va = a.queue.size
+        vb = b.queue.size
+        if a.patient != nil
+          va += 1
+        end
+        if b.patient != nil
+          vb += 1
+        end
+        va <=> vb }
+      if list[0].patient == nil
+        list[0].patient = pat
+        printf("\t\t#{pat.name} is assigned to #{list[0].doctor.name}, #{list[0].doctor.specialty}, in room #{list[0].number}\n\n")
+      else
+        list[0].queue << pat
+        printf("\t\t#{pat.name} has been entered on room #{list[0].number}'s waitlist\n\n")
+      end
+    else
+      printf("\t\tSorry #{pat.name}, no doctors are currently available.\n\n")
+    end
+  end
+end
+
+
+# creates a doctor
+class Doctor
+
+  attr_reader :name
+  attr_reader :room_number
+  attr_reader :specialty
+
+  def initialize(n, rn, sc)
+    @name = n
+    @room_number = rn
+    @specialty = sc
+  end
+end
+
+
+# creates a patient
+class Patient
+
+  attr_reader :name
+  attr_reader :age
+  attr_reader :specialty
+
+  def initialize(n, a, sc)
+    @name = n
+    @age = a
+    @specialty = sc
+  end
+end
+
+
+#creates a Room
+class Room
+
+  attr_reader :number
+  attr_accessor :patient
+  attr_accessor :doctor
+  attr_accessor :queue
+
+  def initialize(n)
+    @number = n
+    @patient = nil
+    @doctor = nil
+    @queue = []
+  end
+end
+
+
+
+class TestClinic < Test::Unit::TestCase
+  def test_clinic
+    c = Clinic.new
+    pat1 = Patient.new("Austin", 31, "GEN")
+    pat2 = Patient.new("Bob", 16, "PED")
+    pat3 = Patient.new("Suzy", 20, "CAR")
+    pat4 = Patient.new("Robert", 19, "SUR")
+    doc1 = Doctor.new("Andy", 2, "GEN")
+    doc2 = Doctor.new("Billy", 10, "PED")
+    doc3 = Doctor.new("John", 20, "CAR")
+    c.rooms[1].doctor = doc1
+    assert_equal(c.rooms.size, 100)
+    assert_nil(c.assign(pat1))
+    assert_equal(c.rooms[1].patient, pat1)
+    assert_nil(c.assign(pat4))
+    assert_equal(c.rooms[1].queue[0], pat4)
+    c.rooms[9].doctor = doc2
+    assert_nil(c.assign(pat2))
+    assert_equal(c.rooms[9].patient, pat2)
+    c.rooms[19].doctor = doc3
+    assert_nil(c.assign(pat3))
+    assert_equal(c.rooms[19].patient, pat3)
+    assert_equal(c.rooms[1].queue.push(pat1), [pat4, pat1])
+    c.rooms[1].doctor = nil
+    assert_equal(c.reassign(c.rooms[1].queue), [pat4, pat1])
+    assert_equal(c.rooms[9].queue[0], pat4)
+    assert_equal(c.rooms[19].queue[0], pat1)
+  end
+
+  def test_doctor
+    p = Doctor.new("Bob", 18, "PED")
+    assert_equal(p.name, "Bob")
+    assert_equal(p.room_number, 18)
+    assert_equal(p.specialty, "PED")
+  end
+
+  def test_patient
+    p = Patient.new("Bob", 18, "PED")
+    assert_equal(p.name, "Bob")
+    assert_equal(p.age, 18)
+    assert_equal(p.specialty, "PED")
+  end
+
+  def test_room
+    r = Room.new(21)
+    assert_equal(r.number, 21)
+    d = Doctor.new("Ron", 18, "PED")
+    r.doctor = d
+    p = Patient.new("Daniel", 19, "GEN")
+    r.patient = p
+    r.queue << p
+    assert_equal(r.patient, p)
+    assert_equal(r.doctor, d)
+    assert_equal(r.queue.empty?, false)
+  end
+end
+</pre>

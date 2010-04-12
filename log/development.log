@@ -4861,3 +4861,1640 @@ Migrating to CreatePosts (20100323183103)
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("posts")[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-09 11:49:34) [GET]
+Rendering template within layouts/pages
+Rendered pages/_home (42.0ms)
+Completed in 383ms (View: 375, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-09 11:50:18) [GET]
+Rendering template within layouts/pages
+Rendered pages/_home (2.0ms)
+Completed in 27ms (View: 19, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-09 15:44:46) [GET]
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 260ms (View: 233, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-09 15:44:59) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (235.0ms)
+Completed in 340ms (View: 336, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-09 15:45:33) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (3.0ms)
+Completed in 2438ms (View: 2279, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 19:48:13) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (2.0ms)
+Completed in 275ms (View: 259, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 19:48:36) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (2.0ms)
+Completed in 602ms (View: 569, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 19:51:37) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (3.0ms)
+Completed in 52ms (View: 33, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 19:52:20) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (3.0ms)
+Completed in 36ms (View: 28, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 19:53:36) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (2.0ms)
+Completed in 45ms (View: 32, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 19:55:59) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (2.0ms)
+Completed in 128ms (View: 121, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 19:56:08) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (2.0ms)
+Completed in 28ms (View: 13, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 19:56:14) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 19:57:37) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 186ms (View: 178, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 19:57:57) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 29ms (View: 16, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 19:58:09) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 22ms (View: 13, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 19:59:37) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (20.0ms)
+Completed in 287ms (View: 120, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 19:59:56) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 117ms (View: 109, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:01:50) [GET]
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 72ms (View: 19, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:02:28) [GET]
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 184ms (View: 177, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:02:35) [GET]
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 36ms (View: 30, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:03:13) [GET]
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 30ms (View: 19, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:03:52) [GET]
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 53ms (View: 26, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:08:56) [GET]
+Rendering template within layouts/pages
+Rendered pages/_home (2.0ms)
+Completed in 130ms (View: 118, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:09:28) [GET]
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 27ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:10:27) [GET]
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 138ms (View: 130, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:14:27) [GET]
+Rendering template within layouts/pages
+Rendered pages/_home (2.0ms)
+Completed in 192ms (View: 105, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:14:49) [GET]
+Rendering template within layouts/pages
+Rendered pages/_home (2.0ms)
+Completed in 110ms (View: 99, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:15:17) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (2.0ms)
+Completed in 128ms (View: 93, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:15:35) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (10.0ms)
+Completed in 86ms (View: 56, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:15:59) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (8.0ms)
+Completed in 112ms (View: 90, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:16:27) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 31ms (View: 19, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:16:33) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 46ms (View: 27, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:16:48) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 22ms (View: 15, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:17:03) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 85ms (View: 54, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:17:18) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (36.0ms)
+Completed in 174ms (View: 165, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:17:24) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (14.0ms)
+Completed in 58ms (View: 33, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:17:46) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (3.0ms)
+Completed in 84ms (View: 60, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:18:01) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (3.0ms)
+Completed in 46ms (View: 33, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:18:32) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (3.0ms)
+Completed in 426ms (View: 199, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:18:40) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 30ms (View: 19, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:18:46) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/pages
+Rendered pages/_about (23.0ms)
+Completed in 193ms (View: 151, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:19:08) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/pages
+Rendered pages/_about (1.0ms)
+Completed in 24ms (View: 17, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:20:09) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/pages
+Rendered pages/_about (1.0ms)
+Completed in 33ms (View: 23, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:22:18) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/pages
+Rendered pages/_about (2.0ms)
+Completed in 28ms (View: 15, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:23:01) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/pages
+Rendered pages/_about (1.0ms)
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:24:55) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/pages
+Rendered pages/_about (1.0ms)
+Completed in 29ms (View: 22, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:25:35) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (3.0ms)
+Completed in 95ms (View: 82, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:25:58) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (4.0ms)
+Completed in 83ms (View: 56, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:26:09) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (4.0ms)
+Completed in 29ms (View: 22, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:26:12) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 23ms (View: 12, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:27:28) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (4.0ms)
+Completed in 37ms (View: 29, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-10 20:28:07) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 28ms (View: 19, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:01:43) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (2.0ms)
+Completed in 451ms (View: 302, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:01:52) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/pages
+Rendered pages/_about (1.0ms)
+Completed in 44ms (View: 18, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:03:10) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/pages
+Rendered pages/_about (1.0ms)
+Completed in 151ms (View: 144, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:13:27) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+
+ActionView::TemplateError (Illegal element: classes and ids must have values.) on line #17 of app/views/pages/_portfolio.haml:
+14:   Introduction to
+15:   %a{href="https://docs.google.com/a/westmont.edu/viewer?a=v&pid=sites&srcid=d2VzdG1vbnQuZWR1fGRhbGVvbmd8Z3g6NWJhN2M1YTk4MTBlMDM2YQ"}
+16:     Computer Science II
+17:   . Spring 2010
+18: 
+19: %blockquote
+20:   %ul
+
+    app/views/pages/_portfolio.haml:17
+    haml (2.2.16) [v] lib/haml/precompiler.rb:677:in `render_tag'
+    haml (2.2.16) [v] lib/haml/precompiler.rb:805:in `render_div'
+    haml (2.2.16) [v] lib/haml/precompiler.rb:209:in `process_line'
+    haml (2.2.16) [v] lib/haml/precompiler.rb:177:in `precompile'
+    haml (2.2.16) [v] lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.16) [v] lib/haml/template/plugin.rb:24:in `new'
+    haml (2.2.16) [v] lib/haml/template/plugin.rb:24:in `compile'
+    haml (2.2.16) [v] lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    app/controllers/pages_controller.rb:4:in `index'
+    haml (2.2.16) [v] lib/sass/plugin/rails.rb:19:in `process'
+    compass (0.8.17) [v] lib/compass/app_integration/rails/action_controller.rb:7:in `process_with_compass'
+    <internal:prelude>:8:in `synchronize'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (3366.2ms)
+Rendered rescues/_request_and_response (89.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:13:06) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+
+ActionView::TemplateError (Illegal element: classes and ids must have values.) on line #17 of app/views/pages/_portfolio.haml:
+14:   Introduction to
+15:   %a{href="https://docs.google.com/a/westmont.edu/viewer?a=v&pid=sites&srcid=d2VzdG1vbnQuZWR1fGRhbGVvbmd8Z3g6NWJhN2M1YTk4MTBlMDM2YQ"}
+16:     Computer Science II
+17:   . Spring 2010
+18: 
+19: %blockquote
+20:   %ul
+
+    app/views/pages/_portfolio.haml:17
+    haml (2.2.16) [v] lib/haml/precompiler.rb:677:in `render_tag'
+    haml (2.2.16) [v] lib/haml/precompiler.rb:805:in `render_div'
+    haml (2.2.16) [v] lib/haml/precompiler.rb:209:in `process_line'
+    haml (2.2.16) [v] lib/haml/precompiler.rb:177:in `precompile'
+    haml (2.2.16) [v] lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.16) [v] lib/haml/template/plugin.rb:24:in `new'
+    haml (2.2.16) [v] lib/haml/template/plugin.rb:24:in `compile'
+    haml (2.2.16) [v] lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    app/controllers/pages_controller.rb:4:in `index'
+    haml (2.2.16) [v] lib/sass/plugin/rails.rb:19:in `process'
+    compass (0.8.17) [v] lib/compass/app_integration/rails/action_controller.rb:7:in `process_with_compass'
+    <internal:prelude>:8:in `synchronize'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (483.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:13:34) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+
+ActionView::TemplateError (undefined method `map' for #<String:0x537aae0>) on line #15 of app/views/pages/_portfolio.haml:
+12:   \:
+13: %b
+14:   Introduction to&nbsp
+15:   %a{href="https://docs.google.com/a/westmont.edu/viewer?a=v&pid=sites&srcid=d2VzdG1vbnQuZWR1fGRhbGVvbmd8Z3g6NWJhN2M1YTk4MTBlMDM2YQ"}><
+16:     Computer Science II
+17:   \. Spring 2010.
+18: 
+
+    haml (2.2.16) [v] lib/haml/buffer.rb:198:in `block in open_tag'
+    haml (2.2.16) [v] lib/haml/buffer.rb:197:in `each'
+    haml (2.2.16) [v] lib/haml/buffer.rb:197:in `open_tag'
+    app/views/pages/_portfolio.haml:15:in `_run_haml_app47views47pages47_portfolio46haml_locals_object_portfolio'
+    haml (2.2.16) [v] lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    app/controllers/pages_controller.rb:4:in `index'
+    haml (2.2.16) [v] lib/sass/plugin/rails.rb:19:in `process'
+    compass (0.8.17) [v] lib/compass/app_integration/rails/action_controller.rb:7:in `process_with_compass'
+    <internal:prelude>:8:in `synchronize'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (610.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:15:15) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (38.0ms)
+Completed in 856ms (View: 844, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:15:38) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (55.0ms)
+Completed in 201ms (View: 166, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:15:53) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (29.0ms)
+Completed in 116ms (View: 104, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:16:17) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (191.0ms)
+Completed in 568ms (View: 560, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:17:41) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (2.0ms)
+Completed in 24ms (View: 16, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:18:54) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (2.0ms)
+Completed in 23ms (View: 16, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:19:26) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (2.0ms)
+Completed in 22ms (View: 16, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:19:49) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (2.0ms)
+Completed in 25ms (View: 18, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:24:21) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (30.0ms)
+Completed in 112ms (View: 101, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:24:35) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (158.0ms)
+Completed in 267ms (View: 255, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:28:39) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (23.0ms)
+Completed in 76ms (View: 68, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:35:34) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (72.0ms)
+Completed in 146ms (View: 137, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:36:06) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (128.0ms)
+Completed in 318ms (View: 298, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:36:39) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (42.0ms)
+Completed in 97ms (View: 91, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:36:49) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (46.0ms)
+Completed in 115ms (View: 107, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:37:12) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (64.0ms)
+Completed in 224ms (View: 216, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:38:14) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (45.0ms)
+Completed in 110ms (View: 102, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:38:46) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (5.0ms)
+Completed in 53ms (View: 44, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:39:02) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (89.0ms)
+Completed in 219ms (View: 193, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:39:31) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (75.0ms)
+Completed in 144ms (View: 136, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:41:00) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (76.0ms)
+Completed in 201ms (View: 184, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:41:20) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (51.0ms)
+Completed in 118ms (View: 110, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:41:41) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (103.0ms)
+Completed in 416ms (View: 295, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:43:42) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (50.0ms)
+Completed in 133ms (View: 121, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:44:28) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (95.0ms)
+Completed in 219ms (View: 211, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:45:45) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+
+ActionView::TemplateError (undefined method `image_tage' for #<ActionView::Base:0x339a520>) on line #47 of app/views/pages/_portfolio.haml:
+44:             %u
+45:               %a(href="http://sites.google.com/a/westmont.edu/daleong/downloads/GroceryStore.zip?attredirects=0")
+46:                 Grocery Store
+47:           = image_tage "rubylang.png", :width => '13.9', :height => '16.4'
+48:           %br
+49:           %font{:size => 1}
+50:             Simulates a register in a store where the item number and quantity are input and a receipt with the total is printed. The inventory list is read in via a CSV Reader.
+
+    app/views/pages/_portfolio.haml:47:in `_run_haml_app47views47pages47_portfolio46haml_locals_object_portfolio'
+    haml (2.2.16) [v] lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    app/controllers/pages_controller.rb:4:in `index'
+    haml (2.2.16) [v] lib/sass/plugin/rails.rb:19:in `process'
+    compass (0.8.17) [v] lib/compass/app_integration/rails/action_controller.rb:7:in `process_with_compass'
+    <internal:prelude>:8:in `synchronize'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (773.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:45:55) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (79.0ms)
+Completed in 265ms (View: 255, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:46:25) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (45.0ms)
+Completed in 139ms (View: 116, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:46:47) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (168.0ms)
+Completed in 328ms (View: 312, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:47:20) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (198.0ms)
+Completed in 334ms (View: 325, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:47:38) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (6.0ms)
+Completed in 29ms (View: 21, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:47:49) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (105.0ms)
+Completed in 291ms (View: 213, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:47:56) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (187.0ms)
+Completed in 338ms (View: 327, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 14:48:16) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (147.0ms)
+Completed in 322ms (View: 311, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:01:35) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (147.0ms)
+Completed in 297ms (View: 287, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:03:33) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (63.0ms)
+Completed in 129ms (View: 122, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:03:49) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (113.0ms)
+Completed in 282ms (View: 275, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:04:09) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (405.0ms)
+Completed in 524ms (View: 509, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:05:16) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (106.0ms)
+Completed in 231ms (View: 210, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:05:28) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (94.0ms)
+Completed in 172ms (View: 162, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:05:48) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (107.0ms)
+Completed in 219ms (View: 210, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:08:06) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (83.0ms)
+Completed in 159ms (View: 149, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:08:46) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (8.0ms)
+Completed in 25ms (View: 19, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:10:08) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (65.0ms)
+Completed in 158ms (View: 152, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:10:19) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (140.0ms)
+Completed in 336ms (View: 320, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:10:36) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (7.0ms)
+Completed in 26ms (View: 19, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:11:08) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (79.0ms)
+Completed in 156ms (View: 145, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:12:46) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (7.0ms)
+Completed in 32ms (View: 25, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:13:17) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (143.0ms)
+Completed in 254ms (View: 243, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:13:57) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (68.0ms)
+Completed in 136ms (View: 129, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:14:47) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (97.0ms)
+Completed in 175ms (View: 168, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:15:35) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (401.0ms)
+Completed in 610ms (View: 591, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:16:02) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (73.0ms)
+Completed in 143ms (View: 133, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:16:21) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (162.0ms)
+Completed in 267ms (View: 255, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:17:09) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (337.0ms)
+Completed in 480ms (View: 464, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:17:28) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (115.0ms)
+Completed in 264ms (View: 232, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:22:02) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (18.0ms)
+Completed in 59ms (View: 36, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:23:06) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (8.0ms)
+Completed in 35ms (View: 25, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:23:19) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (22.0ms)
+Completed in 61ms (View: 38, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:23:30) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (10.0ms)
+Completed in 234ms (View: 214, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:23:42) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (8.0ms)
+Completed in 31ms (View: 21, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:24:09) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (183.0ms)
+Completed in 256ms (View: 249, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:24:20) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (208.0ms)
+Completed in 358ms (View: 334, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:27:38) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (7.0ms)
+Completed in 32ms (View: 26, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:28:12) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (6.0ms)
+Completed in 30ms (View: 23, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:28:51) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (7.0ms)
+Completed in 27ms (View: 20, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:29:16) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (22.0ms)
+Completed in 88ms (View: 48, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:29:30) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (7.0ms)
+Completed in 50ms (View: 24, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:29:55) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (13.0ms)
+Completed in 59ms (View: 40, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:31:47) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (10.0ms)
+Completed in 77ms (View: 68, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:32:35) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (7.0ms)
+Completed in 74ms (View: 66, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:33:07) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (20.0ms)
+Completed in 45ms (View: 37, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:35:20) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (93.0ms)
+Completed in 388ms (View: 382, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:37:31) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (7.0ms)
+Completed in 36ms (View: 26, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:38:57) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (5.0ms)
+Completed in 36ms (View: 19, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:40:09) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (6.0ms)
+Completed in 90ms (View: 67, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:40:40) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (7.0ms)
+Completed in 123ms (View: 72, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:42:07) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (24.0ms)
+Completed in 66ms (View: 39, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:42:30) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (8.0ms)
+Completed in 64ms (View: 56, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:49:23) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (135.0ms)
+Completed in 312ms (View: 305, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:49:41) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (83.0ms)
+Completed in 146ms (View: 140, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:50:19) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (114.0ms)
+Completed in 415ms (View: 271, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:53:42) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (89.0ms)
+Completed in 242ms (View: 207, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:56:53) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (61.0ms)
+Completed in 130ms (View: 124, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:57:07) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (88.0ms)
+Completed in 190ms (View: 183, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:57:22) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (353.0ms)
+Completed in 717ms (View: 707, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 15:57:59) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (70.0ms)
+Completed in 129ms (View: 123, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 16:27:41) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (61.0ms)
+Completed in 127ms (View: 119, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 16:27:54) [GET]
+  Parameters: {"page"=>"grocerystore"}
+Rendering template within layouts/pages
+
+ActionView::TemplateError (Illegal element: classes and ids must have values.) on line #1 of app/views/pages/_grocerystore.haml:
+1: # Purpose: to represent an item in a store's inventory
+2: class InventoryItem
+3: &nbsp;&nbsp;&nbsp;&nbsp;attr_reader :product_num
+4: &nbsp;&nbsp;&nbsp;&nbsp;attr_reader :description
+
+    app/views/pages/_grocerystore.haml:1
+    haml (2.2.16) [v] lib/haml/precompiler.rb:677:in `render_tag'
+    haml (2.2.16) [v] lib/haml/precompiler.rb:805:in `render_div'
+    haml (2.2.16) [v] lib/haml/precompiler.rb:212:in `process_line'
+    haml (2.2.16) [v] lib/haml/precompiler.rb:177:in `precompile'
+    haml (2.2.16) [v] lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.16) [v] lib/haml/template/plugin.rb:24:in `new'
+    haml (2.2.16) [v] lib/haml/template/plugin.rb:24:in `compile'
+    haml (2.2.16) [v] lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    app/controllers/pages_controller.rb:4:in `index'
+    haml (2.2.16) [v] lib/sass/plugin/rails.rb:19:in `process'
+    compass (0.8.17) [v] lib/compass/app_integration/rails/action_controller.rb:7:in `process_with_compass'
+    <internal:prelude>:8:in `synchronize'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (678.0ms)
+Rendered rescues/_request_and_response (11.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 16:28:24) [GET]
+  Parameters: {"page"=>"grocerystore"}
+Rendering template within layouts/pages
+
+ActionView::TemplateError (Illegal nesting: nesting within plain text is illegal.) on line #41 of app/views/pages/_grocerystore.haml:
+38: 
+39: #Purpose: to serve the appropriate number of customers
+40: def register
+41: 	while true
+42: 		customer
+43: 		puts "Another customer? (Y/N)"
+44: 		line = gets.chomp
+
+    app/views/pages/_grocerystore.haml:41
+    haml (2.2.16) [v] lib/haml/precompiler.rb:343:in `push_plain'
+    haml (2.2.16) [v] lib/haml/precompiler.rb:276:in `process_line'
+    haml (2.2.16) [v] lib/haml/precompiler.rb:177:in `precompile'
+    haml (2.2.16) [v] lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.16) [v] lib/haml/template/plugin.rb:24:in `new'
+    haml (2.2.16) [v] lib/haml/template/plugin.rb:24:in `compile'
+    haml (2.2.16) [v] lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    app/controllers/pages_controller.rb:4:in `index'
+    haml (2.2.16) [v] lib/sass/plugin/rails.rb:19:in `process'
+    compass (0.8.17) [v] lib/compass/app_integration/rails/action_controller.rb:7:in `process_with_compass'
+    <internal:prelude>:8:in `synchronize'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (913.1ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 16:29:51) [GET]
+  Parameters: {"page"=>"grocerystore"}
+Rendering template within layouts/pages
+
+ActionView::TemplateError (undefined local variable or method `purchase' for #<ActionView::Base:0x5139860>) on line #78 of app/views/pages/_grocerystore.haml:
+75: &nbsp;&nbsp;&nbsp;&nbsp;order.each do |purchase|
+76: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item = get_item(purchase[0])
+77: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if item == "*** item not found ***"
+78: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;puts "*** item #{purchase[0]} not in inventory ***"
+79: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elsif purchase[1] <= 0
+80: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;puts "*** invalid quanitity ***"
+81: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else
+
+    app/views/pages/_grocerystore.haml:78:in `_run_haml_app47views47pages47_grocerystore46haml_locals_grocerystore_object'
+    haml (2.2.16) [v] lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    app/controllers/pages_controller.rb:4:in `index'
+    haml (2.2.16) [v] lib/sass/plugin/rails.rb:19:in `process'
+    compass (0.8.17) [v] lib/compass/app_integration/rails/action_controller.rb:7:in `process_with_compass'
+    <internal:prelude>:8:in `synchronize'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (1064.1ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 16:31:55) [GET]
+  Parameters: {"page"=>"grocerystore"}
+Rendering template within layouts/pages
+Rendered pages/_grocerystore (16.0ms)
+Completed in 121ms (View: 113, DB: 0) | 200 OK [http://localhost/grocerystore]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 16:32:22) [GET]
+  Parameters: {"page"=>"grocerystore"}
+Rendering template within layouts/pages
+Rendered pages/_grocerystore (17.0ms)
+Completed in 91ms (View: 81, DB: 0) | 200 OK [http://localhost/grocerystore]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 16:35:24) [GET]
+  Parameters: {"page"=>"grocerystore"}
+Rendering template within layouts/pages
+
+ActionView::MissingTemplate (Missing template pages/_grocerystore.erb in view path app/views:vendor/gems/clearance-0.8.7/app/views):
+  haml (2.2.16) [v] lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+  app/controllers/pages_controller.rb:4:in `index'
+  haml (2.2.16) [v] lib/sass/plugin/rails.rb:19:in `process'
+  compass (0.8.17) [v] lib/compass/app_integration/rails/action_controller.rb:7:in `process_with_compass'
+  <internal:prelude>:8:in `synchronize'
+  C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 16:35:52) [GET]
+  Parameters: {"page"=>"grocerystore"}
+Rendering template within layouts/pages
+Rendered pages/_grocerystore (85.0ms)
+Completed in 174ms (View: 168, DB: 0) | 200 OK [http://localhost/grocerystore]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 16:37:15) [GET]
+  Parameters: {"page"=>"grocerystore"}
+Rendering template within layouts/pages
+Rendered pages/_grocerystore (15.0ms)
+Completed in 204ms (View: 194, DB: 0) | 200 OK [http://localhost/grocerystore]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 16:37:49) [GET]
+  Parameters: {"page"=>"grocerystore"}
+Rendering template within layouts/pages
+Rendered pages/_grocerystore (18.0ms)
+Completed in 88ms (View: 81, DB: 0) | 200 OK [http://localhost/grocerystore]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 16:50:22) [GET]
+  Parameters: {"page"=>"grocerystore"}
+Rendering template within layouts/pages
+Rendered pages/_grocerystore (1.0ms)
+Completed in 27ms (View: 18, DB: 0) | 200 OK [http://localhost/grocerystore]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 16:50:27) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (51.0ms)
+Completed in 181ms (View: 156, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 16:51:40) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (710.0ms)
+Completed in 841ms (View: 831, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 16:52:09) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (83.0ms)
+Completed in 160ms (View: 153, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 16:52:51) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (81.0ms)
+Completed in 149ms (View: 136, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 16:53:21) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (88.0ms)
+Completed in 268ms (View: 239, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 16:53:30) [GET]
+  Parameters: {"page"=>"grocerystore"}
+Rendering template within layouts/pages
+Rendered pages/_grocerystore (1.0ms)
+Completed in 53ms (View: 46, DB: 0) | 200 OK [http://localhost/grocerystore]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 16:54:54) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (68.0ms)
+Completed in 221ms (View: 152, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 16:56:16) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (23.0ms)
+Completed in 63ms (View: 41, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 16:57:21) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (6.0ms)
+Completed in 26ms (View: 19, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 16:57:26) [GET]
+  Parameters: {"page"=>"medclinic"}
+Rendering template within layouts/pages
+Rendered pages/_medclinic (35.0ms)
+Completed in 113ms (View: 107, DB: 0) | 200 OK [http://localhost/medclinic]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 22:02:16) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (69.0ms)
+Completed in 140ms (View: 132, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 22:02:40) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (84.0ms)
+Completed in 163ms (View: 155, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 22:05:36) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (247.0ms)
+Completed in 878ms (View: 864, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 22:06:01) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (72.0ms)
+Completed in 139ms (View: 131, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 22:06:29) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (208.0ms)
+Completed in 362ms (View: 353, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 22:08:58) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (59.0ms)
+Completed in 224ms (View: 217, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 22:09:29) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (77.0ms)
+Completed in 1058ms (View: 1031, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 22:09:42) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (167.0ms)
+Completed in 364ms (View: 358, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 22:09:56) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (343.0ms)
+Completed in 505ms (View: 481, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 22:10:13) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (546.0ms)
+Completed in 760ms (View: 751, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 22:10:34) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (89.0ms)
+Completed in 177ms (View: 170, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 22:11:03) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (110.0ms)
+Completed in 182ms (View: 175, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 22:18:57) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (5.0ms)
+Completed in 21ms (View: 15, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 22:19:13) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (9.0ms)
+Completed in 205ms (View: 20, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 22:19:28) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (8.0ms)
+Completed in 113ms (View: 88, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 22:21:03) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (7.0ms)
+Completed in 109ms (View: 99, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:02:19) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+
+ActionView::TemplateError (undefined local variable or method `href' for #<ActionView::Base:0x4a51080>) on line #90 of app/views/pages/_portfolio.haml:
+87:     #download
+88:     = image_tag "rubylang.png", :width => '16.68', :height => '19.68'
+89:     &nbsp;
+90:     %a{href => "/permutations", :target => "_blank"}
+91:       Permutations
+92:     %br
+93:     #list_item
+
+    app/views/pages/_portfolio.haml:90:in `_run_haml_app47views47pages47_portfolio46haml_locals_object_portfolio'
+    haml (2.2.16) [v] lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    app/controllers/pages_controller.rb:4:in `index'
+    haml (2.2.16) [v] lib/sass/plugin/rails.rb:19:in `process'
+    compass (0.8.17) [v] lib/compass/app_integration/rails/action_controller.rb:7:in `process_with_compass'
+    <internal:prelude>:8:in `synchronize'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (1489.1ms)
+Rendered rescues/_request_and_response (6.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:02:40) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (404.0ms)
+Completed in 489ms (View: 482, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:02:58) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (131.0ms)
+Completed in 192ms (View: 185, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:03:17) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (468.0ms)
+Completed in 649ms (View: 625, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:03:35) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (345.0ms)
+Completed in 410ms (View: 402, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:03:58) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (202.8ms)
+Completed in 359ms (View: 328, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:04:46) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (265.0ms)
+Completed in 741ms (View: 565, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:05:07) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (130.0ms)
+Completed in 194ms (View: 187, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:05:23) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (199.0ms)
+Completed in 293ms (View: 267, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:06:58) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (112.0ms)
+Completed in 182ms (View: 174, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:07:48) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (243.0ms)
+Completed in 627ms (View: 609, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:08:19) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (329.0ms)
+Completed in 505ms (View: 479, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:08:54) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (15.0ms)
+Completed in 132ms (View: 112, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:08:57) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (9.0ms)
+Completed in 31ms (View: 25, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:09:01) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/pages
+Rendered pages/_about (4.0ms)
+Completed in 59ms (View: 55, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:09:03) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (80.0ms)
+Completed in 131ms (View: 124, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:09:05) [GET]
+  Parameters: {"page"=>"contact"}
+Rendering template within layouts/pages
+Rendered pages/_contact (6.0ms)
+Completed in 59ms (View: 54, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:09:07) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:09:20) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 58ms (View: 33, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:09:24) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (3.0ms)
+Completed in 23ms (View: 18, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-11 23:09:48) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20100323183103)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("posts")[0m

@@ -4,20 +4,23 @@
     %link{:rel=> "shortcut icon", :href=> "favicon.ico"}
     = stylesheet_link_tag 'compiled/global.css'
   %body
-    #nav
-      %ul
-        %li
-          = link_to "<span>Home</span>", "/home", :class => "medium red button"
-        %li
-          = link_to "<span>Resume</span>", "/resume", :class => "medium red button"
-        %li
-          = link_to "<span>Portfolio</span>", "/portfolio", :class => "medium red button"
-        %li
-          = link_to "<span>About</span>", "/about", :class => "medium red button"
-        %li
-          = link_to "<span>Contact</span>", "/contact", :class => "medium red button"
-        %hr{:align => "left", :width => "45%"}
-    #gridWrapper
-      = flash[:notice]
-      = flash[:error]
-      = yield
+    #wrap
+      #nav
+        %ul
+          %li
+            = link_to "<span>Home</span>", "/home", :class => "small red button"
+          %li
+            = link_to "<span>Resume</span>", "/resume", :class => "small red button"
+          %li
+            = link_to "<span>Portfolio</span>", "/portfolio", :class => "small red button"
+          %li
+            = link_to "<span>About</span>", "/about", :class => "small red button"
+          %li
+            = link_to "<span>Contact</span>", "/contact", :class => "small red button"
+          %hr{:align => "left", :width => "46%"}
+      #gridWrapper
+        = flash[:notice]
+        = flash[:error]
+        = yield
+    #footer
+      copyright Daniel T Leong 2010 all rights reserved
