@@ -1,4 +1,4 @@
-<h1>Listing posts</h1>
+<h2>Blog Entries</h2>
 
 <table>
   <tr>
@@ -16,7 +16,7 @@
 
     <td><%=h post.body %></td>
 
-    <td><%= link_to 'Show', post %></td>
+    <td><%= link_to 'View', post %></td>
     <td><%= link_to 'Edit', edit_post_path(post) %></td>
     <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
