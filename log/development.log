@@ -8739,3 +8739,175 @@ Migrating to CreatePosts (20100323183103)
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("posts")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20100323183103)
+Migrating to CreateComments (20100429053738)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "body" text, "post_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100429053738')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("posts")[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-28 22:44:25) [GET]
+Rendering template within layouts/pages
+Rendered pages/_home (25.0ms)
+Completed in 64ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-04-28 22:44:27) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 314ms (View: 176, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-04-28 22:44:29) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 4) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 4) [0m
+Completed in 176ms (View: 56, DB: 0) | 200 OK [http://localhost/posts/4]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-04-28 22:44:32) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Completed in 30ms (View: 10, DB: 1) | 200 OK [http://localhost/posts/2]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-04-28 22:44:35) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 34ms (View: 9, DB: 0) | 200 OK [http://localhost/posts/5]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-04-28 22:44:38) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Completed in 28ms (View: 10, DB: 0) | 200 OK [http://localhost/posts/2]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2010-04-28 22:44:47) [POST]
+  Parameters: {"authenticity_token"=>"19dtS4XMlBQN7QxTvFHHjkJxg3CdDL5v4DexKduJu3Q=", "comment"=>{"post_id"=>"2", "name"=>"daniel", "body"=>"best comment ever!"}, "commit"=>"Post Comment"}
+  [4;35;1mComment Create (1.0ms)[0m   [0mINSERT INTO "comments" ("name", "body", "post_id", "created_at", "updated_at") VALUES('daniel', 'best comment ever!', 2, '2010-04-29 05:44:47', '2010-04-29 05:44:47')[0m
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Redirected to http://localhost:3000/posts/2
+Completed in 175ms (DB: 2) | 302 Found [http://localhost/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-04-28 22:44:48) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Rendered posts/_comment (1.0ms)
+Completed in 70ms (View: 50, DB: 0) | 200 OK [http://localhost/posts/2]
+
+
+Processing CommentsController#destroy (for 127.0.0.1 at 2010-04-28 22:44:51) [DELETE]
+  Parameters: {"authenticity_token"=>"19dtS4XMlBQN7QxTvFHHjkJxg3CdDL5v4DexKduJu3Q=", "id"=>"1"}
+  [4;35;1mComment Load (1.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 1) [0m
+  [4;36;1mComment Destroy (1.0ms)[0m   [0;1mDELETE FROM "comments" WHERE "id" = 1[0m
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Redirected to http://localhost:3000/posts/2
+Completed in 142ms (DB: 2) | 302 Found [http://localhost/comments/1]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-04-28 22:44:52) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Completed in 32ms (View: 9, DB: 0) | 200 OK [http://localhost/posts/2]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-04-28 22:45:17) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Completed in 48ms (View: 27, DB: 1) | 200 OK [http://localhost/posts/2]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-04-28 22:45:33) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Completed in 65ms (View: 39, DB: 0) | 200 OK [http://localhost/posts/2]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-04-28 22:45:43) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Completed in 44ms (View: 26, DB: 0) | 200 OK [http://localhost/posts/2]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-04-28 22:46:43) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Completed in 39ms (View: 20, DB: 0) | 200 OK [http://localhost/posts/2]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-04-28 22:46:56) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (2.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Completed in 62ms (View: 35, DB: 3) | 200 OK [http://localhost/posts/2]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-28 22:47:21) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (0.0ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-28 22:47:30) [GET]
+  Parameters: {"page"=>"contact"}
+Rendering template within layouts/pages
+Rendered pages/_contact (3.0ms)
+Completed in 51ms (View: 48, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-28 22:47:34) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (0.0ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/home]
