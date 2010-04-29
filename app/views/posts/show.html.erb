@@ -21,6 +21,7 @@
       <%= link_to '<span>Back to Blog</span>', posts_path, :class => "micro red button" %>
     </div>
     <div class="three columns">
+      <br/>
       <%= render :partial => 'comment', :collection => @post.comments %>
       <input type="button" value=" Comment Fields  " class="large red button" onClick='toggle("commentform");'/>
 

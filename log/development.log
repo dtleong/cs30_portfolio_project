@@ -9409,3 +9409,354 @@ Rendering posts/show
   [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
 Rendered posts/_comment (2.0ms)
 Completed in 31ms (View: 11, DB: 0) | 200 OK [http://localhost/posts/2]
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20100323183103)
+Migrating to CreateComments (20100429053738)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("posts")[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-04-29 02:27:05) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (1.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Rendered posts/_comment (4.0ms)
+Completed in 488ms (View: 209, DB: 1) | 200 OK [http://localhost/posts/2]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2010-04-29 02:27:24) [POST]
+  Parameters: {"authenticity_token"=>"xBBawh2w/Q0q4xvPtdIHzBrPZU4S17s1naNJULeMJA8=", "comment"=>{"post_id"=>"2", "name"=>"Daniel", "body"=>"looksie daisy."}, "commit"=>"Post Comment"}
+  [4;36;1mComment Create (1.0ms)[0m   [0;1mINSERT INTO "comments" ("name", "body", "post_id", "created_at", "updated_at") VALUES('Daniel', 'looksie daisy.', 2, '2010-04-29 09:27:24', '2010-04-29 09:27:24')[0m
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Redirected to http://localhost:3000/posts/2
+Completed in 129ms (DB: 1) | 302 Found [http://localhost/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-04-29 02:27:26) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Rendered posts/_comment (2.0ms)
+Rendered posts/_comment (1.0ms)
+Completed in 30ms (View: 11, DB: 1) | 200 OK [http://localhost/posts/2]
+
+
+Processing CommentsController#destroy (for 127.0.0.1 at 2010-04-29 02:27:42) [DELETE]
+  Parameters: {"authenticity_token"=>"xBBawh2w/Q0q4xvPtdIHzBrPZU4S17s1naNJULeMJA8=", "id"=>"3"}
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 3) [0m
+  [4;35;1mComment Destroy (1.0ms)[0m   [0mDELETE FROM "comments" WHERE "id" = 3[0m
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Redirected to http://localhost:3000/posts/2
+Completed in 180ms (DB: 2) | 302 Found [http://localhost/comments/3]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-04-29 02:27:43) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (1.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Rendered posts/_comment (2.0ms)
+Completed in 28ms (View: 8, DB: 1) | 200 OK [http://localhost/posts/2]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2010-04-29 02:27:54) [POST]
+  Parameters: {"authenticity_token"=>"xBBawh2w/Q0q4xvPtdIHzBrPZU4S17s1naNJULeMJA8=", "comment"=>{"post_id"=>"2", "name"=>"Daniel", "body"=>"est 2"}, "commit"=>"Post Comment"}
+  [4;35;1mComment Create (1.0ms)[0m   [0mINSERT INTO "comments" ("name", "body", "post_id", "created_at", "updated_at") VALUES('Daniel', 'est 2', 2, '2010-04-29 09:27:54', '2010-04-29 09:27:54')[0m
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Redirected to http://localhost:3000/posts/2
+Completed in 149ms (DB: 2) | 302 Found [http://localhost/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-04-29 02:27:54) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Rendered posts/_comment (3.0ms)
+Rendered posts/_comment (0.0ms)
+Completed in 30ms (View: 10, DB: 0) | 200 OK [http://localhost/posts/2]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-04-29 02:27:57) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (1.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Rendered posts/_comment (5.0ms)
+Rendered posts/_comment (0.0ms)
+Completed in 33ms (View: 12, DB: 2) | 200 OK [http://localhost/posts/2]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-04-29 02:28:21) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPost Load (13.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (1.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Rendered posts/_comment (3.0ms)
+Rendered posts/_comment (1.0ms)
+Completed in 113ms (View: 72, DB: 14) | 200 OK [http://localhost/posts/2]
+
+
+Processing CommentsController#destroy (for 127.0.0.1 at 2010-04-29 02:28:51) [DELETE]
+  Parameters: {"authenticity_token"=>"xBBawh2w/Q0q4xvPtdIHzBrPZU4S17s1naNJULeMJA8=", "id"=>"4"}
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 4) [0m
+  [4;36;1mComment Destroy (1.0ms)[0m   [0;1mDELETE FROM "comments" WHERE "id" = 4[0m
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Redirected to http://localhost:3000/posts/2
+Completed in 157ms (DB: 2) | 302 Found [http://localhost/comments/4]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-04-29 02:28:51) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (1.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Rendered posts/_comment (3.0ms)
+Completed in 33ms (View: 12, DB: 1) | 200 OK [http://localhost/posts/2]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-04-29 02:28:54) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (1.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Rendered posts/_comment (3.0ms)
+Completed in 29ms (View: 9, DB: 2) | 200 OK [http://localhost/posts/2]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:32:03) [GET]
+  Parameters: {"page"=>"contact"}
+Rendering template within layouts/pages
+Rendered pages/_contact (8.0ms)
+Completed in 48ms (View: 46, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:32:06) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/pages
+Rendered pages/_about (9.0ms)
+Completed in 22ms (View: 20, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:32:10) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (36.0ms)
+Completed in 50ms (View: 48, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:32:14) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (26.0ms)
+Completed in 39ms (View: 38, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:32:15) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (61.0ms)
+Completed in 72ms (View: 71, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:32:18) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (1.0ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:34:33) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (1.0ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:34:36) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+
+ActionView::TemplateError (The line was indented 2 levels deeper than the previous line.) on line #5 of app/views/pages/_portfolio.haml:
+2:   %title
+3:     D. Leong - Portfolio
+4: #title
+5:     Westmont Classes
+6: %br
+7: 
+8: .row
+
+    app/views/pages/_portfolio.haml:5
+    haml (2.2.16) [v] lib/haml/precompiler.rb:180:in `precompile'
+    haml (2.2.16) [v] lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.16) [v] lib/haml/template/plugin.rb:24:in `new'
+    haml (2.2.16) [v] lib/haml/template/plugin.rb:24:in `compile'
+    haml (2.2.16) [v] lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    app/controllers/pages_controller.rb:4:in `index'
+    haml (2.2.16) [v] lib/sass/plugin/rails.rb:19:in `process'
+    compass (0.8.17) [v] lib/compass/app_integration/rails/action_controller.rb:7:in `process_with_compass'
+    <internal:prelude>:8:in `synchronize'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Users/Daniel/College/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (139.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:34:54) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (33.0ms)
+Completed in 49ms (View: 46, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:35:27) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (2.0ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:35:29) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (18.0ms)
+Completed in 30ms (View: 29, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:35:31) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (0.0ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:35:51) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (26.0ms)
+Completed in 43ms (View: 41, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:36:02) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (28.0ms)
+Completed in 43ms (View: 41, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:36:51) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (55.0ms)
+Completed in 69ms (View: 68, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:37:08) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (24.0ms)
+Completed in 36ms (View: 35, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:37:25) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (24.0ms)
+Completed in 37ms (View: 36, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:37:36) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (28.0ms)
+Completed in 40ms (View: 39, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:37:52) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (25.0ms)
+Completed in 38ms (View: 36, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:38:07) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (27.0ms)
+Completed in 40ms (View: 38, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:38:24) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (31.0ms)
+Completed in 51ms (View: 45, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:38:38) [GET]
+  Parameters: {"page"=>"portfolio"}
+Rendering template within layouts/pages
+Rendered pages/_portfolio (3.0ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/portfolio]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:38:41) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/pages
+Rendered pages/_about (1.0ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:38:43) [GET]
+  Parameters: {"page"=>"contact"}
+Rendering template within layouts/pages
+Rendered pages/_contact (0.0ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:38:45) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (0.0ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:38:47) [GET]
+  Parameters: {"page"=>"resume"}
+Rendering template within layouts/pages
+Rendered pages/_resume (0.0ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/resume]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:38:48) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (0.0ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/home]
