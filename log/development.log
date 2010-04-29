@@ -9760,3 +9760,50 @@ Processing PagesController#index (for 127.0.0.1 at 2010-04-29 02:38:48) [GET]
 Rendering template within layouts/pages
 Rendered pages/_home (0.0ms)
 Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 09:55:12) [GET]
+Rendering template within layouts/pages
+Rendered pages/_home (33.0ms)
+Completed in 3244ms (View: 3241, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 09:55:31) [GET]
+Rendering template within layouts/pages
+Rendered pages/_home (0.0ms)
+Completed in 45ms (View: 43, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-04-29 09:55:34) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 531ms (View: 259, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-04-29 09:57:03) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 32ms (View: 21, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-04-29 09:57:06) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 19ms (View: 9, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-04-29 09:57:23) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 43ms (View: 31, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-04-29 09:57:31) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 60ms (View: 43, DB: 0) | 200 OK [http://localhost/posts]
