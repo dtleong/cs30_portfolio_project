@@ -9939,3 +9939,50 @@ Processing PagesController#index (for 127.0.0.1 at 2010-04-29 10:34:53) [GET]
 Rendering template within layouts/pages
 Rendered pages/_home (1.0ms)
 Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/home]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 10:54:48) [GET]
+Rendering template within layouts/pages
+Rendered pages/_home (75.0ms)
+Completed in 228ms (View: 224, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-04-29 10:55:07) [GET]
+  [4;36;1mPost Load (3.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 2788ms (View: 1750, DB: 3) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-04-29 10:55:11) [GET]
+  [4;35;1mPost Load (4.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 119ms (View: 59, DB: 4) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-04-29 10:55:14) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPost Load (2.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (1.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Rendered posts/_comment (44.0ms)
+Completed in 1069ms (View: 251, DB: 3) | 200 OK [http://localhost/posts/2]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-04-29 10:55:28) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (2.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Rendered posts/_comment (124.0ms)
+Completed in 660ms (View: 422, DB: 3) | 200 OK [http://localhost/posts/2]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-29 10:55:37) [GET]
+  Parameters: {"page"=>"home"}
+Rendering template within layouts/pages
+Rendered pages/_home (1.0ms)
+Completed in 34ms (View: 24, DB: 0) | 200 OK [http://localhost/home]
