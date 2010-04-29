@@ -1,39 +1,65 @@
-
-<p>
-  <b>Title:</b>
-  <%=h @post.title %>
-</p>
-
-
-<p>
-  <b>Body:</b>
-  <%=h @post.body %>
-</p>
+<div id="gridWrapper">
+  <div class="row">
+    <div class="first seven columns">
+      <p>
+        <b>Title:</b>
+        <br/>
+        <%= h @post.title %>
+      </p>
+      <br/>
 
 
+      <p>
+        <b>Body:</b>
+        <br/>
+        <%= h @post.body %>
+      </p>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back to Blog', posts_path %>
 
-<hr align="left" width="550px" background-color="#0070c3" color="#0070c3"/>
-<br /> 
-<% form_for @comment do|f| %>
-   <%= f.error_messages %>
-   <%= f.hidden_field :post_id %>
-<h3>COMMENTS</h3>
-   <p>
-     <%= f.label :name %><br />
-     <%= f.text_field :name %>
-   </p>
 
-   <p>
-     <%= f.label :body %><br />
-     <%= f.text_area :body %>
-   </p>
+      <%= link_to '<span>Edit</span>', edit_post_path(@post), :class => "micro red button" %> |
+      <%= link_to '<span>Back to Blog</span>', posts_path, :class => "micro red button" %>
+    </div>
+    <div class="three columns">
+      <%= render :partial => 'comment', :collection => @post.comments %>
+      <input type="button" value=" Comment Fields  " class="large red button" onClick='toggle("commentform");'/>
 
-   <p>
-     <%= f.submit "Post Comment" %>
-   </p>
- <% end %>
+      <div id="commentform">
+        <% form_for @comment do|f| %>
+            <%= f.error_messages %>
+            <%= f.hidden_field :post_id %>
 
- <%= render :partial => 'comment', :collection => @post.comments %>
+            <p>
+              <%= f.label :name %><br/>
+              <%= f.text_field :name %>
+            </p>
+
+            <p>
+              <%= f.label :body %><br/>
+              <%= f.text_area :body %>
+            </p>
+
+            <p>
+              <%= f.submit "Post Comment" %>
+            </p>
+        <% end %>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    document.getElementById('commentform').style.display = 'none';
+
+    function toggle(obj) {
+        var el = document.getElementById(obj);
+        if (el.style.display != 'none') {
+            el.style.display = 'none';
+        }
+        else {
+            el.style.display = '';
+        }
+    }
+</script>

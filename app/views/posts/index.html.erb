@@ -1,28 +1,39 @@
 <h2>Blog Entries</h2>
 
-<table>
-  <tr>
+<div id="gridWrapper">
+  <div class="row">
 
-    <th>Title</th>
+    <div class="first one columns">
+      <h4>Title</h4>
+    </div>
 
-    <th>Body</th>
+    <div class="seven columns">
+      <h4>Body</h4>
+    </div>
 
-  </tr>
+  </div>
 
-<% @posts.each do |post| %>
-  <tr>
+  <% @posts.each do |post| %>
+      <div class="row">
 
-    <td><%=h post.title %></td>
+        <div class="first one columns">
+          <h5><%= h post.title %></h5>
+        </div>
 
-    <td><%=h post.body %></td>
+        <div class="seven columns">
+          <%= h post.body %>
+          <br/>
+          <hr align="left" width="700px" background-color="#0070c3" color="#0070c3"/>
+          <%= link_to '<span>View</span>', post, :class => "micro red button" %>
+          <%= link_to '<span>Edit</span>', edit_post_path(post), :class => "micro red button" %>
+          <%= link_to '<span>Destroy</span>', post, :confirm => 'Are you sure?', :method => :delete, :class => "micro red button" %>
+        </div>
+      </div>
+      <br/>
+      <br/>
+  <% end %>
+</div>
 
-    <td><%= link_to 'View', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+<br/>
 
-<br />
-
-<%= link_to 'New post', new_post_path %>
+<%= link_to '<span>New post</span>', new_post_path, :class => "micro red button" %>
